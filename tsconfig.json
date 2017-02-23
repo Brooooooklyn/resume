@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "ES5",
+    "moduleResolution": "node",
+    "module": "es2015",
+    "jsx": "react",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true
+  }
+}

@@ -1,0 +1,12 @@
+.root {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+}
+
+@media (max-width: 600px) {
+  .root {
+    width: 90%;
+    left: 5%;
+  }
+}

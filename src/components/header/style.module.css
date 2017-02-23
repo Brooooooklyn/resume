@@ -1,0 +1,51 @@
+.header {
+  margin-top: 50px;
+  .headerInfoWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    left: 5%;
+    position: relative;
+    :global .header-info {
+      width: 40%;
+      :global .icon {
+        height: 20px;
+      }
+      :global .icon::before {
+        position: relative;
+        top: 2px;
+      }
+      :global .header-info-content {
+        line-height: 20px;
+        color: gray;
+        font-size: 14px;
+        margin-left: 10px;
+        :visited {
+          color: gray;
+        }
+      }
+    }
+    /*:global .zhihu {
+      color: #0f88eb;
+      :global .header-info-content {
+        color: #0f88eb;
+      }
+    }
+    :global .wechat {
+      color: #288525;
+      :global .header-info-content {
+        color: #288525;
+      }
+    }*/
+  }
+}
+
+.name {
+  margin: 5px 0;
+  font-size: 22px;
+}
+
+.hr {
+}
