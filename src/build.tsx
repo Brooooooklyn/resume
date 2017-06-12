@@ -1,6 +1,5 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-// AppContainer is a necessary wrapper component for HMR
 import App from './components/App'
 import globalState, { Lang } from './globalState'
 import 'tb-icons/lib/styles/tb-icons'

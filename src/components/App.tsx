@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './header'
+import { Header, headerProps } from './header'
+import { Experience, experienceProps } from './experience'
 import { Lang } from '../globalState'
-import HeaderProps from './header/props'
 
 interface AppProps {
   lang: Lang
@@ -9,10 +9,12 @@ interface AppProps {
 
 export default class extends React.PureComponent<AppProps, void> {
   render() {
-    const headerProps = HeaderProps[this.props.lang]
+    const _headerProps = headerProps[this.props.lang]
+    const _experienceProps = experienceProps[this.props.lang]
     return (
       <div>
-        <Header { ...headerProps }></Header>
+        <Header { ..._headerProps } />
+        <Experience { ..._experienceProps } />
       </div>
     )
   }

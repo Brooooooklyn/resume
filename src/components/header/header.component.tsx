@@ -17,7 +17,7 @@ export interface HeaderProps {
   wechat: string
 }
 
-export default class Header extends React.PureComponent<HeaderProps, void> {
+export class Header extends React.PureComponent<HeaderProps, void> {
   render() {
     return (
       <div className={ style.header }>
@@ -26,7 +26,11 @@ export default class Header extends React.PureComponent<HeaderProps, void> {
         <div className={ style.headerInfoWrap }>
           <div className='header-info'>
             <i className='icon icon-envelope'></i>
-            <span className='header-info-content'>{ this.props.email }</span>
+            <a className='header-info-content'
+              href='mailto:lynweklm@gmail.com'
+            >
+              { this.props.email }
+            </a>
           </div>
           <div className='header-info'>
             <i className='icon icon-rss'></i>
@@ -38,7 +42,11 @@ export default class Header extends React.PureComponent<HeaderProps, void> {
           </div>
           <div className='header-info'>
             <i className='icon icon-phone'></i>
-            <span className='header-info-content'>{ this.props.phone }</span>
+            <a className='header-info-content'
+              href='tel:+86-018516508691'
+            >
+              { this.props.phone }
+            </a>
           </div>
           <div className='github header-info'>
             <i className='icon icon-github'></i>

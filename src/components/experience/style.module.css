@@ -1,0 +1,9 @@
+.experience {
+  margin-top: 20px;
+  .title {
+    display: flex;
+    .titleContent {
+      margin-left: 10px;
+    }
+  }
+}

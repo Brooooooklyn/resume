@@ -1,10 +1,10 @@
 const { resolve } = require('path')
-const { CheckerPlugin } = require('awesome-typescript-loader')
 const webpack = require('webpack')
 const os = require('os')
 const HappyPack = require('happypack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
 
@@ -58,26 +58,22 @@ const config = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: [ 'react-hot-loader/webpack', 'awesome-typescript-loader' ],
+        use: [ 'cache-loader', 'react-hot-loader/webpack', 'happypack/loader?id=ts' ],
         exclude: /node_modules/
       },
       {
         test: /\.module\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: ['happypack/loader?id=moduleCss'],
-          fallback: [{
-            loader: 'style-loader'
-          }]
-        })
+        loaders: [
+          'cache-loader',
+          'happypack/loader?id=moduleCss'
+        ]
       },
       {
         test: /^((?!\.module).)*css$/,
-        use: ExtractTextPlugin.extract({
-          use: [ 'happypack/loader?id=css' ],
-          fallback: [{
-            loader: 'style-loader'
-          }]
-        })
+        loaders: [
+          'cache-loader',
+          'happypack/loader?id=css'
+        ]
       },
       {
         test: /\.(svg|cur)$/,
@@ -95,11 +91,10 @@ const config = {
   },
 
   node: {
-    process: false
+    process: true
   },
 
   plugins: [
-    new CheckerPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     // enable HMR globally
 
@@ -119,16 +114,24 @@ const config = {
     }),
 
     new HappyPack({
+      id: 'ts',
+      loaders: [ 'ts-loader?transpileOnly=true&happyPackMode=true' ],
+      threadPool: happyThreadPool
+    }),
+
+    new HappyPack({
       id: 'moduleCss',
-      loaders: [ 'css-loader?modules&importLoaders=1', 'postcss-loader' ],
+      loaders: [ 'style-loader', 'css-loader?modules&importLoaders=1', 'postcss-loader' ],
       threadPool: happyThreadPool
     }),
 
     new HappyPack({
       id: 'css',
-      loaders: [ 'css-loader', 'postcss-loader' ],
+      loaders: [ 'style-loader', 'css-loader', 'postcss-loader'],
       threadPool: happyThreadPool
-    })
+    }),
+
+    new ForkTsCheckerWebpackPlugin()
 
   ],
 }
@@ -144,18 +147,24 @@ if (NODE_ENV === 'production') {
     'tslib'
   ]
 
-  plugins.push(new webpack.LoaderOptionsPlugin({
-    minimize: true,
-    debug: false
-  }))
-
-  plugins.push(new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      dead_code: true,
-      warnings: false
-    },
-    sourceMap: false
-  }))
+  plugins.push(
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        dead_code: true,
+        warnings: false
+      },
+      sourceMap: false
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    })
+  )
 }
 
 module.exports = config
