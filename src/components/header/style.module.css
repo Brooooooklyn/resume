@@ -5,8 +5,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 90%;
-    left: 5%;
+    width: 94%;
+    left: 3%;
     position: relative;
     :global .header-info {
       width: 40%;
@@ -45,7 +45,4 @@
 .name {
   margin: 5px 0;
   font-size: 22px;
-}
-
-.hr {
 }

@@ -6,4 +6,23 @@
       margin-left: 10px;
     }
   }
+  .body {
+    margin-top: 10px;
+    .experience_wrap {
+      padding: 5px 20px;
+    }
+  }
+  .company {
+    font-weight: bold;
+  }
+  .work-title {
+    margin-left: 15px;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .work-time {
+    float: right;
+    font-size: 14px;
+  }
 }

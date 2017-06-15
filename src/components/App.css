@@ -1,0 +1,36 @@
+#root {
+  margin-bottom: 100px;
+}
+
+code {
+  position: relative;
+  bottom: 2px;
+  padding: 5px 2px;
+}
+
+section {
+  li {
+    margin-top: 5px;
+  }
+
+  li:last-child {
+    margin-bottom: 5px;
+  }
+
+  p, li {
+    color: #24292e;
+    line-height: 24px;
+  }
+
+  a, a:link, a:visited {
+    color: #0366d6;
+  }
+
+  a:focus, a:hover {
+    color: #03a9f4;
+  }
+}
+
+li ul {
+  margin-left: 20px;
+}

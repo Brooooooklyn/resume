@@ -83,6 +83,10 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [ 'file-loader' ]
       },
+      {
+        test: /\.md$/,
+        use: [ 'raw-loader' ]
+      }
     ],
   },
 

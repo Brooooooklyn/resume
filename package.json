@@ -29,6 +29,7 @@
     "postcss-loader": "^2.0.5",
     "postcss-nested": "^2.0.2",
     "postcss-smart-import": "^0.7.4",
+    "raw-loader": "^0.5.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "style-loader": "^0.18.2",
     "ts-loader": "^2.1.0",
@@ -40,6 +41,7 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-markdown": "^2.5.0",
     "tb-icons": "^0.2.52",
     "tslib": "^1.7.1"
   }
