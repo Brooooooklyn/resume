@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import ReactMarkdown from 'react-markdown'
 
 const style = require('./style.module.css')
