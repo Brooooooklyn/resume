@@ -8,7 +8,7 @@ export interface SkillProps {
   content: string
 }
 
-export class Skill extends React.PureComponent<SkillProps, void> {
+export class Skill extends React.PureComponent<SkillProps> {
   render() {
     return (
       <section className={ style.skill }>

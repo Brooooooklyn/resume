@@ -8,7 +8,7 @@ export interface EducationProps {
   content: string
 }
 
-export class EducationComponent extends React.PureComponent<EducationProps, void> {
+export class EducationComponent extends React.PureComponent<EducationProps> {
   render() {
     return (
       <section className={ style.education }>

@@ -13,7 +13,7 @@ export interface ExperienceProps {
   }[]
 }
 
-export class Experience extends React.PureComponent<ExperienceProps, void> {
+export class Experience extends React.PureComponent<ExperienceProps> {
   render() {
     return (
       <section className={ 'experience ' + style.experience }>

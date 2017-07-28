@@ -17,7 +17,7 @@ export interface HeaderProps {
   wechat: string
 }
 
-export class Header extends React.PureComponent<HeaderProps, void> {
+export class Header extends React.PureComponent<HeaderProps> {
   render() {
     return (
       <div className={ style.header }>
