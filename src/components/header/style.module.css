@@ -1,5 +1,6 @@
 .header {
   margin-top: 50px;
+  min-width: 380px;
   .headerInfoWrap {
     display: flex;
     flex-direction: row;
@@ -10,6 +11,7 @@
     position: relative;
     :global .header-info {
       width: 40%;
+      display: flex;
       :global .icon {
         height: 20px;
       }

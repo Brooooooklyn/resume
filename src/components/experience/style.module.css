@@ -1,5 +1,6 @@
 .experience {
   margin-top: 20px;
+  min-width: 380px;
   .title {
     display: flex;
     .titleContent {
@@ -24,5 +25,6 @@
   .work-time {
     float: right;
     font-size: 14px;
+    margin-right: 10px;
   }
 }

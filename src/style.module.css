@@ -4,6 +4,10 @@
   left: 10%;
 }
 
+hr {
+  margin-right: 10px;
+}
+
 @media (max-width: 600px) {
   .root {
     width: 90%;

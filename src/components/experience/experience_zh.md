@@ -10,7 +10,7 @@
 - 负责探索 Teambition 数据层重构方案，在此前提下设计了 Teambition SDK
 - 负责 [Teambition SDK](https://github.com/teambition/teambition-sdk) 的维护
 - 协助前端架构组的 Angular 2 重构计划，为团队内部成员培训和推广 `RxJS` 与 `TypeScript`
-- 设计了 [ReactiveDB](https://github.com/teambition/reactivedb) 并在此基础上完善了 Teambition 的数据同步方案
+- 设计了 [ReactiveDB](https://github.com/reactivedb/core) 并在此基础上完善了 Teambition 的数据同步方案
 
 ==split==
 

@@ -1,5 +1,6 @@
 .education {
   margin-top: 20px;
+  min-width: 380px;
   .title-wrap {
     display: flex;
     .title {
