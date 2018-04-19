@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
+    "strict": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noImplicitThis": true,
@@ -10,10 +10,8 @@
     "suppressImplicitAnyIndexErrors": true,
     "target": "ES5",
     "moduleResolution": "node",
-    "module": "es2015",
+    "module": "esnext",
     "jsx": "react",
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "skipLibCheck": true,
   }
 }

@@ -2,26 +2,29 @@ import { HeaderProps } from './index'
 
 const props: {
   zh: HeaderProps
-  en: Partial<HeaderProps>
+  en: HeaderProps
 } = {
   zh: {
     name: '龙逸楠',
     email: 'lynweklm@gmail.com',
-    site: 'http://vvlyn.xyz',
-    phone: 18516508691,
+    site: 'http://lynvv.xyz',
+    phone: '(+86) 17621988985',
     github: {
       name: 'Brooooooklyn',
-      url: 'https://github.com/Brooooooklyn'
+      url: 'https://github.com/Brooooooklyn',
     },
     zhihu: {
       name: '太狼',
-      url: 'https://www.zhihu.com/people/Broooooklyn'
+      url: 'https://www.zhihu.com/people/Broooooklyn',
     },
-    wechat: 'lynweklm'
+    wechat: 'lynweklm',
   },
-  en: {
-    name: 'LongYinan'
-  }
+  get en() {
+    return {
+      ...this.zh,
+      name: 'Yinan Long',
+    }
+  },
 }
 
 export default props

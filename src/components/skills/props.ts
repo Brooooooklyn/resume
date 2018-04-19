@@ -4,15 +4,18 @@ const content = require('./skills_zh.md')
 
 const props: {
   zh: SkillProps
-  en: Partial<SkillProps>
+  en: SkillProps
 } = {
   zh: {
     title: '技能',
-    content
+    content,
   },
-  en: {
-    title: 'Skill'
-  }
+  get en() {
+    return {
+      ...this.zh,
+      title: 'Skill',
+    }
+  },
 }
 
 export default props

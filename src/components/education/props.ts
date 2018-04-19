@@ -4,15 +4,18 @@ const contentZh = require('./education_zh.md')
 
 const props: {
   zh: EducationProps
-  en: Partial<EducationProps>
+  en: EducationProps
 } = {
   zh: {
     title: '教育经历',
-    content: contentZh
+    content: contentZh,
   },
-  en: {
-    title: 'Education'
-  }
+  get en() {
+    return {
+      ...this.zh,
+      title: 'Education',
+    }
+  },
 }
 
 export default props

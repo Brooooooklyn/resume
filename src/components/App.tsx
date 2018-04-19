@@ -11,7 +11,7 @@ interface AppProps {
   lang: Lang
 }
 
-export default class extends React.PureComponent<AppProps, void> {
+export default class extends React.PureComponent<AppProps> {
   render() {
     const _headerProps = headerProps[this.props.lang]
     const _experienceProps = experienceProps[this.props.lang]
@@ -19,10 +19,10 @@ export default class extends React.PureComponent<AppProps, void> {
     const _educationProps = educationProps[this.props.lang]
     return (
       <div>
-        <Header { ..._headerProps } />
-        <Experience { ..._experienceProps } />
-        <Skill { ..._skillProps }/>
-        <EducationComponent { ..._educationProps }/>
+        <Header {..._headerProps} />
+        <Experience {..._experienceProps} />
+        <Skill {..._skillProps} />
+        <EducationComponent {..._educationProps} />
       </div>
     )
   }

@@ -1,64 +1,68 @@
 const merge = require('webpack-merge')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const config = require('./webpack.common')
 
 config.entry.main = './src/build.tsx'
-config.entry.vendor = [
-  'react',
-  'react-dom',
-  'tslib'
-]
+config.entry.vendor = ['react', 'react-dom', 'tslib']
 
 module.exports = merge(config, {
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: [ 'cache-loader', 'happypack/loader?id=ts' ]
+        use: ['cache-loader', 'happypack/loader?id=ts'],
       },
       {
         test: /\.module\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [ 'css-loader?modules&importLoaders=1', 'postcss-loader']
-        })
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: false,
+              modules: true,
+              minimize: true,
+              camelCase: true,
+              import: true,
+              importLoaders: 1,
+            },
+          },
+          'postcss-loader',
+        ],
       },
       {
         test: /^((?!\.module).)*css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [ 'css-loader', 'postcss-loader']
-        })
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: false,
+              modules: false,
+              minimize: true,
+              camelCase: true,
+              import: true,
+              importLoaders: 1,
+            },
+          },
+          'postcss-loader',
+        ],
       },
-    ]
+    ],
   },
+
+  mode: 'production',
+
   plugins: [
-    new ExtractTextPlugin({
-      filename: 'styles/style.[hash].css',
-      allChunks: true,
-      ignoreOrder: true
+    new MiniCssExtractPlugin({
+      filename: `[name].[chunkhash:8].css`,
     }),
 
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor'
-    }),
-
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        dead_code: true,
-        warnings: false
-      },
-      sourceMap: false
-    }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production')
-      }
-    })
-  ]
+        NODE_ENV: JSON.stringify('production'),
+      },
+    }),
+  ],
 })

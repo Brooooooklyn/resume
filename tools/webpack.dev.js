@@ -13,27 +13,28 @@ module.exports = merge(config, {
     contentBase: resolve(__dirname, 'dist'),
     // match the output path
 
-    publicPath: '/'
+    publicPath: '/',
     // match the output `publicPath`
   },
+
+  mode: 'development',
 
   module: {
     rules: [
       {
+        test: /\.(ts|tsx)$/,
+        use: ['cache-loader', 'happypack/loader?id=ts'],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.module\.css$/,
-        loaders: [
-          'cache-loader',
-          'happypack/loader?id=moduleCss'
-        ]
+        loaders: ['cache-loader', 'happypack/loader?id=moduleCss'],
       },
       {
         test: /^((?!\.module).)*css$/,
-        loaders: [
-          'cache-loader',
-          'happypack/loader?id=css'
-        ]
+        loaders: ['cache-loader', 'happypack/loader?id=css'],
       },
-    ]
+    ],
   },
 
   plugins: [
@@ -41,10 +42,5 @@ module.exports = merge(config, {
     new webpack.NamedModulesPlugin(),
     // enable HMR globally
     new webpack.HotModuleReplacementPlugin(),
-
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['common', 'vendor'],
-      minChunks: 2
-    })
-  ]
+  ],
 })

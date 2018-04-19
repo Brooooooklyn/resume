@@ -14,17 +14,18 @@ $root.setAttribute('class', styles.root)
 const render = (Component: any, lang: Lang) => {
   ReactDOM.render(
     <AppContainer>
-      <Component lang={ lang }/>
+      <Component lang={lang} />
     </AppContainer>,
-    $root
+    $root,
   )
 }
 
 render(App, globalState.lang as Lang)
 
-// Hot Module Replacement API
-if (module.hot) {
-  module.hot.accept('./components/App', () => {
-    render(App, globalState.lang as Lang)
-  })
-}
+if (process.env.NODE_ENV === 'development')
+  if (module.hot) {
+    // Hot Module Replacement API
+    module.hot.accept('./components/App', () => {
+      render(App, globalState.lang as Lang)
+    })
+  }
