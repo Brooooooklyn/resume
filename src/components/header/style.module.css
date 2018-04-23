@@ -12,6 +12,7 @@
     :global .header-info {
       width: 40%;
       display: flex;
+      padding: 2.5px 0;
       :global .icon {
         height: 20px;
       }
@@ -29,22 +30,10 @@
         }
       }
     }
-    /*:global .zhihu {
-      color: #0f88eb;
-      :global .header-info-content {
-        color: #0f88eb;
-      }
-    }
-    :global .wechat {
-      color: #288525;
-      :global .header-info-content {
-        color: #288525;
-      }
-    }*/
   }
 }
 
 .name {
   margin: 5px 0;
-  font-size: 22px;
+  font-size: 32px;
 }

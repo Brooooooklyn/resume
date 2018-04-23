@@ -1,12 +1,13 @@
-- 阅读过 `RxJS` 部分源码，熟练使用 `RxJS` 并贡献过代码
-- [《Learning TypeScript》](https://item.jd.com/12001593.html)中文主要译者
-- 了解 `Angular2` 的部分原理，对其核心组成部分 zone.js 有深入的了解并且贡献过代码
-- 深入理解并熟练开发基于 React + Redux + TypeScript 的应用
+- 阅读过 `RxJS` 部分源码，精通 `RxJS` 并贡献过代码
+- 深入理解并熟练开发基于 `React + Redux + TypeScript` 的应用
+- 熟悉 前端和 `Nodejs` 单元测试，在自己的项目中大量使用过 `Mocha` + `chai` + `sinon` 编写单元测试，同时熟练使用 `ava` & `jest`
+- 使用过 `Express`，`koa`，完整阅读过 `Koa` 源码
+- 了解 `Angular2+` 的部分原理，对其核心组成部分 `zone.js` 有深入的了解并且贡献过代码
 - 阅读过 `Angularjs` 部分源码，并实现过其 Scope 部分及脏检测
-- 有过大型单页Web 应用实战经验，处理过大规模的数据变更场景下的优化，了解前端性能优化基本技巧
+- 有过大型单页Web 应用实战经验，处理过大规模的数据变更场景下的优化，了解前端性能优化与调试技巧
 - 对前端数据层有深入的实战经验，在公司的项目中熟练使用 `Backbone`
-- 用手写的递归下降实现过 Html 的解析器
-- 熟悉 前端/Nodejs 单元测试，在自己的项目中大量使用过 `Mocha` + `chai` + `sinon` 编写单元测试
-- 熟悉 ES6/7 特性，在项目中大量使用 async/await，decorator 等特性
-- 使用过 `Express`, `koa`。完整阅读过 Koa 源码
-- 熟练使用 Git, Gulp, Webpack, Typescript, Less, Coffeescript, ES5/6
+- 熟练使用 Docker
+- 熟悉 ES2015+ 特性，在项目中大量使用 `async/await`，`decorator` 等特性
+- 初级 `Rust` 经验
+- 熟练使用 `Git`, `Gulp`, `Webpack`, `Typescript`, `Less`, `Coffeescript`, `ES5`, `ES2015+`
+- [《Learning TypeScript》](https://item.jd.com/12001593.html)中文译者

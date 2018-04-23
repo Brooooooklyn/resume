@@ -7,8 +7,8 @@ const props: {
   zh: {
     name: '龙逸楠',
     email: 'lynweklm@gmail.com',
-    site: 'http://lynvv.xyz',
-    phone: '(+86) 17621988985',
+    site: 'https://lynvv.xyz',
+    phone: '17621988985',
     github: {
       name: 'Brooooooklyn',
       url: 'https://github.com/Brooooooklyn',

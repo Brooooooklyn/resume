@@ -10,7 +10,7 @@ const $root = document.getElementById('root') as HTMLElement
 $root.setAttribute('class', styles.root)
 
 const render = (Component: any, lang: Lang) => {
-  ReactDOM.render(<Component lang={ lang }/>, $root)
+  ReactDOM.render(<Component lang={lang} />, $root)
 }
 
 render(App, globalState.lang as Lang)

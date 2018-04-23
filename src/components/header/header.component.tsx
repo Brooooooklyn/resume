@@ -21,7 +21,7 @@ export class Header extends React.PureComponent<HeaderProps> {
   render() {
     return (
       <div className={style.header}>
-        <h3 className={style.name}>{this.props.name}</h3>
+        <h1 className={style.name}>{this.props.name}</h1>
         <hr className={style.hr} />
         <div className={style.headerInfoWrap}>
           <div className="header-info">

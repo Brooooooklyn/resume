@@ -35,7 +35,14 @@ const config = {
       },
       {
         test: /\.md$/,
-        use: ['raw-loader'],
+        use: [
+          {
+            loader: 'html-loader',
+          },
+          {
+            loader: 'markdown-loader',
+          },
+        ],
       },
     ],
   },
@@ -79,6 +86,8 @@ const config = {
           path: 'css-loader',
           query: {
             modules: true,
+            camelCase: true,
+            import: true,
             importLoaders: 1,
           },
         },

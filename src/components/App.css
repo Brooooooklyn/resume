@@ -3,9 +3,15 @@
 }
 
 code {
-  position: relative;
-  bottom: 2px;
-  padding: 5px 2px;
+  font-family: 'Monaco', 'Courier New';
+}
+
+blockquote {
+  padding: 0 1em;
+  border-left: 0.25em solid #dfe2e5;
+  p {
+    color: #6a737d !important;
+  }
 }
 
 section {

@@ -23,7 +23,9 @@
     "file-loader": "^1.1.11",
     "fork-ts-checker-webpack-plugin": "^0.4.1",
     "happypack": "^5.0.0-beta.3",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "markdown-loader": "^2.0.2",
     "mini-css-extract-plugin": "^0.4.0",
     "postcss-loader": "^2.1.4",
     "postcss-nested": "^3.0.0",
@@ -45,7 +47,6 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-markdown": "^3.3.0",
     "tb-icons": "^0.2.76",
     "tslib": "^1.9.0"
   },

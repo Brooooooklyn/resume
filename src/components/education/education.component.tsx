@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
 
 const style = require('./style.module.css')
 
@@ -10,14 +9,17 @@ export interface EducationProps {
 
 export class EducationComponent extends React.PureComponent<EducationProps> {
   render() {
+    const inner = {
+      __html: this.props.content,
+    }
     return (
-      <section className={ style.education }>
-        <div className={ style['title-wrap'] }>
-          <i className='icon icon-human' />
-          <span className={ style.title }>{ this.props.title }</span>
+      <section className={style.education}>
+        <div className={style.titleWrap}>
+          <i className="icon icon-human" />
+          <span className={style.title}>{this.props.title}</span>
         </div>
-        <hr/>
-        <ReactMarkdown className={ style.content } source={ this.props.content } />
+        <hr />
+        <div className={style.content} dangerouslySetInnerHTML={inner} />
       </section>
     )
   }
