@@ -14,7 +14,7 @@ export class Skill extends React.PureComponent<SkillProps> {
     }
     return (
       <section className={style.skill}>
-        <div className={style['title-wrap']}>
+        <div className={style.titleWrap}>
           <i className="icon icon-palette" />
           <span className={style.title}>{this.props.title}</span>
         </div>

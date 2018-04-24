@@ -22,10 +22,11 @@ const render = (Component: any, lang: Lang) => {
 
 render(App, globalState.lang as Lang)
 
-if (process.env.NODE_ENV === 'development')
+if (process.env.NODE_ENV === 'development') {
   if (module.hot) {
     // Hot Module Replacement API
     module.hot.accept('./components/App', () => {
       render(App, globalState.lang as Lang)
     })
   }
+}

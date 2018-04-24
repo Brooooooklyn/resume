@@ -1,0 +1,13 @@
+.knowledge {
+  margin-top: 20px;
+  min-width: 380px;
+  .content {
+    padding: 0 20px;
+  }
+  .knowledge-wrap {
+    display: flex;
+    .title {
+      margin-left: 10px;
+    }
+  }
+}

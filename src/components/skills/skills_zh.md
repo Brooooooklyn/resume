@@ -10,4 +10,3 @@
 - 熟悉 ES2015+ 特性，在项目中大量使用 `async/await`，`decorator` 等特性
 - 初级 `Rust` 经验
 - 熟练使用 `Git`, `Gulp`, `Webpack`, `Typescript`, `Less`, `Coffeescript`, `ES5`, `ES2015+`
-- [《Learning TypeScript》](https://item.jd.com/12001593.html)中文译者
