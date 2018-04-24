@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production webpack --config ./tools/webpack.prod.js",
+    "deploy": "yarn build && node ./cdn.js",
     "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +20,7 @@
     "@types/react-dom": "^16.0.5",
     "autoprefixer": "^8.3.0",
     "cache-loader": "^1.2.2",
+    "cos-nodejs-sdk-v5": "^2.3.8",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "fork-ts-checker-webpack-plugin": "^0.4.1",
@@ -33,6 +35,7 @@
     "prettier": "^1.12.1",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^4.1.0",
+    "readdir-enhanced": "^2.2.1",
     "style-loader": "^0.21.0",
     "ts-loader": "^4.2.0",
     "tslint": "^5.9.1",
