@@ -8,5 +8,5 @@
 - 对前端数据层有深入的实战经验，在公司的项目中熟练使用 `Backbone`
 - 熟练使用 Docker
 - 熟悉 ES2015+ 特性，在项目中大量使用 `async/await`，`decorator` 等特性
-- 初级 `Rust` 经验
+- 初级 `Rust` 经验，有实用 `Rust` 开发 Web Server 的经验
 - 熟练使用 `Git`, `Gulp`, `Webpack`, `Typescript`, `Less`, `Coffeescript`, `ES5`, `ES2015+`
