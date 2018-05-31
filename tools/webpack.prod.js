@@ -3,10 +3,8 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const config = require('./webpack.common')
 
-config.entry.main = './src/build.tsx'
-config.entry.vendor = ['react', 'react-dom', 'tslib']
-
 module.exports = merge(config, {
+  entry: './src/build.tsx',
   module: {
     rules: [
       {
@@ -54,6 +52,12 @@ module.exports = merge(config, {
 
   mode: 'production',
 
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: `[name].[chunkhash:8].css`,
@@ -61,7 +65,7 @@ module.exports = merge(config, {
 
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production'),
+        NODE_ENV: '"production"',
       },
     }),
   ],

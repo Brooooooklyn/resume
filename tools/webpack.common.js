@@ -13,7 +13,6 @@ const NODE_ENV = process.env.NODE_ENV
 const config = {
   entry: {
     main: './src/index.tsx',
-    vendor: ['react', 'react-dom', 'react-hot-loader', 'tslib'],
   },
   output: {
     filename: 'js/[name].[hash].js',
