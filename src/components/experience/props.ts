@@ -17,10 +17,17 @@ const props: {
         url: 'https://www.teambition.com',
       },
       {
+        name: 'Musical.ly',
+        time: '2017.6 ~ 2017.9',
+        title: '前端架构师',
+        content: zhContents[1],
+        url: 'https://musical.ly',
+      },
+      {
         name: 'ARKIE',
         time: '2017.9 ~ now',
         title: 'Node 架构师',
-        content: zhContents[1],
+        content: zhContents[2],
         url: 'https://www.arkie.cn',
       },
     ],
