@@ -1,3 +1,4 @@
+const { join } = require('path')
 const merge = require('webpack-merge')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -20,13 +21,19 @@ module.exports = merge(config, {
             options: {
               sourceMap: false,
               modules: true,
-              minimize: true,
               camelCase: true,
               import: true,
               importLoaders: 1,
             },
           },
-          'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: join(__dirname, 'postcss.config.js'),
+              },
+            },
+          },
         ],
       },
       {
@@ -38,13 +45,19 @@ module.exports = merge(config, {
             options: {
               sourceMap: false,
               modules: false,
-              minimize: true,
               camelCase: true,
               import: true,
               importLoaders: 1,
             },
           },
-          'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: join(__dirname, 'postcss.config.js'),
+              },
+            },
+          },
         ],
       },
     ],

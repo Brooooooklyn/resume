@@ -25,10 +25,17 @@ const props: {
       },
       {
         name: 'ARKIE',
-        time: '2017.9 ~ now',
+        time: '2017.9 ~ 2018.6',
         title: 'Node 架构师',
         content: zhContents[2],
         url: 'https://www.arkie.cn',
+      },
+      {
+        name: 'LeetCode 中国',
+        time: '2018.6 ~ now',
+        title: '前端架构师、基础服务负责人',
+        content: zhContents[3],
+        url: 'https://leetcode-cn.com',
       },
     ],
   },

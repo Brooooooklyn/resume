@@ -40,7 +40,7 @@ export class Experience extends React.PureComponent<ExperienceProps> {
       }
       return (
         <div key={i}>
-          <div>
+          <div className={style.companyWrapper}>
             <a href={data.url} target="_blank">
               <span className={style.company}>{data.name}</span>
             </a>

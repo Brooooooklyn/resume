@@ -1,6 +1,5 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { AppContainer } from 'react-hot-loader'
 // AppContainer is a necessary wrapper component for HMR
 import App from './components/App'
 import globalState, { Lang } from './globalState'
@@ -13,9 +12,7 @@ $root.setAttribute('class', styles.root)
 
 const render = (Component: any, lang: Lang) => {
   ReactDOM.render(
-    <AppContainer>
-      <Component lang={lang} />
-    </AppContainer>,
+    (<Component lang={lang} />),
     $root,
   )
 }
