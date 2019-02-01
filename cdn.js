@@ -33,7 +33,7 @@ const promisifyPut = (file) =>
     )
   })
 
-execSync('scp -r -P 11122 ./dist/** lyn@35.201.154.140:/app/resume/')
+execSync('scp -r ./dist/** yinan@35.220.180.201:/app/resume/')
 
 readdir('./dist', { deep: true })
   .then((files) => {
