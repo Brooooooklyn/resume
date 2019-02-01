@@ -13,7 +13,7 @@
     "> 1%",
     "Firefox > 50",
     "last 4 versions",
-    "not ie < 10"
+    "not ie < 11"
   ],
   "keywords": [
     "Resume"
@@ -38,6 +38,7 @@
     "mini-css-extract-plugin": "^0.5.0",
     "postcss-loader": "^3.0.0",
     "postcss-nested": "^4.1.1",
+    "postcss-preset-env": "^6.5.0",
     "postcss-smart-import": "^0.7.6",
     "prettier": "^1.16.3",
     "raw-loader": "^1.0.0",
