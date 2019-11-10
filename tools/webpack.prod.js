@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const config = require('./webpack.common')
 
 module.exports = merge(config, {
-  entry: './src/build.tsx',
   module: {
     rules: [
       {
@@ -13,31 +12,7 @@ module.exports = merge(config, {
         use: ['cache-loader', 'happypack/loader?id=ts'],
       },
       {
-        test: /\.module\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: false,
-              modules: true,
-              camelCase: true,
-              import: true,
-              importLoaders: 1,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              config: {
-                path: join(__dirname, 'postcss.config.js'),
-              },
-            },
-          },
-        ],
-      },
-      {
-        test: /^((?!\.module).)*css$/,
+        test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -45,7 +20,6 @@ module.exports = merge(config, {
             options: {
               sourceMap: false,
               modules: false,
-              camelCase: true,
               import: true,
               importLoaders: 1,
             },

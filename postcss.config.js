@@ -1,10 +1,18 @@
-module.exports = {
-  plugins: [
-    require('postcss-smart-import')(),
-    require('autoprefixer')({
-      browsers: 'last 2 version',
-      flexbox: 'no-2009'
+const autoprefixer = require('autoprefixer')
+const cssnano = require('cssnano')
+const postcssPresetEnv = require('postcss-preset-env')
+
+module.exports = function() {
+  const plugins = [
+    postcssPresetEnv({
+      stage: 0,
     }),
-    require('postcss-nested')()
+    autoprefixer(),
+    require('postcss-nested'),
+    cssnano(),
   ]
+
+  return {
+    plugins,
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-
-const style = require('./style.module')
+import { Global } from '@emotion/core'
+import { Body, CompanyName, CompanyWrapper, ExperienceWrapper, Title, ExperienceBody, WorkTitle, WorkTime, TitleContent, experienceGlobalStyle } from './style'
 
 export interface ExperienceProps {
   title: string
@@ -16,20 +16,20 @@ export interface ExperienceProps {
 export class Experience extends React.PureComponent<ExperienceProps> {
   render() {
     return (
-      <section className={'experience ' + style.experience}>
+      <ExperienceWrapper>
         {this.renderTitle()}
         <hr />
         {this.renderBody()}
-      </section>
+      </ExperienceWrapper>
     )
   }
 
   private renderTitle() {
     return (
-      <div className={style.title}>
+      <Title>
         <i className="icon icon-team-tie" />
-        <span className={style.titleContent}>{this.props.title}</span>
-      </div>
+        <TitleContent>{this.props.title}</TitleContent>
+      </Title>
     )
   }
 
@@ -40,19 +40,20 @@ export class Experience extends React.PureComponent<ExperienceProps> {
       }
       return (
         <div key={i}>
-          <div className={style.companyWrapper}>
+          <Global styles={experienceGlobalStyle} />
+          <CompanyWrapper>
             <a href={data.url} target="_blank">
-              <span className={style.company}>{data.name}</span>
+              <CompanyName>{data.name}</CompanyName>
             </a>
-            <span className={style.workTitle}>{data.title}</span>
-            <span className={style.workTime}>{data.time}</span>
-          </div>
-          <div className={'experience-wrap ' + style.experience_wrap}>
+            <WorkTitle>{data.title}</WorkTitle>
+            <WorkTime>{data.time}</WorkTime>
+          </CompanyWrapper>
+          <ExperienceBody>
             <div dangerouslySetInnerHTML={inner} />
-          </div>
+          </ExperienceBody>
         </div>
       )
     })
-    return <div className={style.body}>{bodys}</div>
+    return <Body>{bodys}</Body>
   }
 }

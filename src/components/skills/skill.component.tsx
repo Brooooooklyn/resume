@@ -1,6 +1,5 @@
 import React from 'react'
-
-const style = require('./style.module.css')
+import { SkillWrapper, TitleWrapper, Title, Content } from './style'
 
 export interface SkillProps {
   title: string
@@ -13,14 +12,14 @@ export class Skill extends React.PureComponent<SkillProps> {
       __html: this.props.content,
     }
     return (
-      <section className={style.skill}>
-        <div className={style.titleWrap}>
+      <SkillWrapper>
+        <TitleWrapper>
           <i className="icon icon-palette" />
-          <span className={style.title}>{this.props.title}</span>
-        </div>
+          <Title>{this.props.title}</Title>
+        </TitleWrapper>
         <hr />
-        <div className={style.content} dangerouslySetInnerHTML={inner} />
-      </section>
+        <Content dangerouslySetInnerHTML={inner} />
+      </SkillWrapper>
     )
   }
 }

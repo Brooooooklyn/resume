@@ -1,6 +1,5 @@
 import React from 'react'
-
-const styles = require('./style.module')
+import { KnowledgeWrapper, Content, KnowledgeWrap, Title } from './style'
 
 export interface KnowledgeProps {
   title: string
@@ -13,14 +12,14 @@ export class Knowledge extends React.PureComponent<KnowledgeProps> {
       __html: this.props.content,
     }
     return (
-      <section className={styles.knowledge}>
-        <div className={styles.knowledgeWrap}>
+      <KnowledgeWrapper>
+        <KnowledgeWrap>
           <i className="icon icon-star-stroke" />
-          <div className={styles.title}>{this.props.title}</div>
-        </div>
+          <Title>{this.props.title}</Title>
+        </KnowledgeWrap>
         <hr />
-        <div className={styles.content} dangerouslySetInnerHTML={inner} />
-      </section>
+        <Content dangerouslySetInnerHTML={inner} />
+      </KnowledgeWrapper>
     )
   }
 }

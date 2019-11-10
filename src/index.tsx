@@ -1,18 +1,22 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import { Global } from '@emotion/core'
 // AppContainer is a necessary wrapper component for HMR
 import App from './components/App'
 import globalState, { Lang } from './globalState'
 import 'tb-icons/lib/styles/tb-icons'
-const styles = require('./style.module')
+import { globalStyles } from './style'
 
 const $root = document.getElementById('root') as HTMLElement
 
-$root.setAttribute('class', styles.root)
-
 const render = (Component: any, lang: Lang) => {
   ReactDOM.render(
-    (<Component lang={lang} />),
+    (
+      <>
+        <Global styles={globalStyles} />
+        <Component lang={lang} />
+      </>
+    ),
     $root,
   )
 }

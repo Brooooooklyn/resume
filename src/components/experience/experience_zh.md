@@ -7,7 +7,7 @@
   - [https://weixin.teambition.com](https://weixin.teambition.com)
 
   等多个项目, 项目在我手上经历过 `Angular 1.x` 到 `Vue`，`CoffeeScript` 到 `TypeScript` 的重写，并且使用了 `RxJS`、`Vuex` 等技术。
-- 开发与维护 [Teambition Web](https://www.teambition.com/projects) (一个 15w 行源码的大型单页应用)
+- 开发与维护 [Teambition Web](https://www.teambition.com/projects)
 
 <block class="experience-block">
   <p><span class="experience-sub-title">前端工程师</span><span class="experience-sub-time">2016.7 ~ 2016.12</span></p>
@@ -29,11 +29,10 @@
   </p>
 </block>
 
-- 负责 Teambition 前端团队的代码 Review 和合并
-- 负责 Teambition 前端产品的发布与上线
+- 前端项目管理，CR/发布/上线
 - 负责搭建前端团队内部的持续集成，自动化部署工具
 - 辅助各业务组的技术选型，框架搭建
-- 负责推动 Teambition 前端重构，从 `CoffeeScript + Backbone + jQuery` 到 `React + Redux + RxJS + TypeScript`。截止到 2017.6 `TypeScript React` 代码已经占了整个项目的 1/3 (3.5w 行)
+- 负责推动 Teambition 前端重构，从 `CoffeeScript + Backbone + jQuery` 到 `React + Redux + RxJS + TypeScript`
 - 解决全团队关于 `TypeScript` `RxJS` 相关的问题
 
 ==split==
@@ -46,7 +45,7 @@
   <p><span class="experience-sub-title">团队建设</span></p>
 </block>
 
-- 主导团队招聘，招聘到三个优秀的 NodeJS 工程师
+- 主导团队招聘，组建团队
 - 带团队。包括任务分配，技术输出和团队文化培养
 
 <block class="experience-block">
@@ -54,49 +53,52 @@
 </block>
 
 - 在公司内推行 `BDD` 模式开发
-- 搭建了 ARKIE 的前端日志系统，包括前端 Error stack 收集上传、SourceMap 集成进 CI，后端基于 Rust 的日志搜集与 Error stack decode
-- 所有 NodeJS 服务迁移到 alinode，所有 node 服务可以基于 Alinode 进行性能监控与在线 Profile
-- 针对大规模推广活动 *** 系统整体 QPS 2000+ *** 进行压测，在线性能 Profile 与代码调优
+- 搭建了 ARKIE 的前端日志监控系统
+- 统一所有 NodeJS 服务架构与基础库，Monorepo 化，共享大部分基础代码
+- 针对大规模推广活动 **系统整体 QPS 2000+** 进行压测，在线性能 Profile 与代码调优
 
 <block class="experience-block">
   <p><span class="experience-sub-title">Infrastructure</span></p>
 </block>
 
-- 搭建了私有 `Gitlab` 服务器
-- 搭建了私有 `cnpm`
+- 搭建了私有 `Gitlab` `cnpm` 等服务
 - 负责 ARKIE 的所有项目 (20+ 个) 的 CI/CD pipeline 搭建与工程化改造
-- 所有项目的 `Docker` 化，编写针对前端与 NodeJS 的基于 `alinode/openresty` 的 Docker BaseImage
-- 全站 https 迁移
-- 全站静态资源 CDN 化，横跨上十个前后端项目
-- 搭建了 `Gitlab Runner` 服务器，以及针对不同应用的基于 `Docker` 的 `Gitlab Runner`，包括前端项目，`Node` 项目，`Rust` 项目
+- 所有项目的 `Docker` 化与微服务架构设计
+- 全站 https、CDN、http2
+- 与运维一起推进 CI/CD 标准化，以及 **dev/staging/hotfix/production/私有部署** 多套环境的自动化部署机制
+- 搭建了 `Alpha` 环境，可以让测试人员在代码合并前单独测试某个仓库的某个分支的代码(不需要部署全套依赖), 并且与 Gitlab CI 集成，让开发可以一键发布分支上的代码到 `Alpha` 环境
 
 <block class="experience-block">
   <p><span class="experience-sub-title">NodeJS 架构</span></p>
 </block>
 
 - JavaScript -> TypeScript + Lint + Prettier + Unit Test
-- 迁移核心项目从 Sails.js -> Nest.js
+- 迁移核心项目从 Sails.js -> NestJS
 - 一个 Node 端的 Canvas Renderer 项目重构，老的架构是 Puppetter + Screenshot，尝试使用 [actix-web](https://github.com/actix/actix-web) + [cairo](https://github.com/gtk-rs/cairo) 重构
-- 创建并维护着内部 NodeJS 微服务的模版项目 `microservice-skeleton`，基于 [NestJS](https://nestjs.com/), 骨架项目中包含了基础的 `Dockerfile`，日志，封装了 `Zipkin` 以及部分 [Hydrix](https://github.com/Netflix/Hystrix) 的 Http Class (retry timeout fallback)，单元测试模版，集成测试模版
-
-<block class="experience-block">
-  <p><span class="experience-sub-title">团队协作</span></p>
-</block>
-
-- 与运维一起推进 CI/CD 标准化，以及基于 `git tag` 的 ***dev/staging/hotfix/production/私有部署*** 多套环境的自动化部署机制
-- 搭建了 `Alpha` 环境，可以让测试人员在代码合并前单独测试某个仓库的某个分支的代码(不需要部署全套依赖), 并且与 Gitlab CI 集成，让开发可以一键发布分支上的代码到 `Alpha` 环境
 
 ==split==
 
 <block class="experience-block">
-  <p><span class="experience-sub-title">整站性能优化</span></p>
+  <p><span class="experience-sub-title">整站技术迁移</span></p>
 </block>
 
 - 全站 CDN & https & http2
-- 前后端核心服务 Docker 化，搭建并将所有 Docker 化的服务迁移进入 Kubernetes 
+- 整站的手动发布+传统单机云服务器架构到全站 Kubernetes
 
 <block class="experience-block">
   <p><span class="experience-sub-title">团队建设</span></p>
 </block>
 
 - 主导公司的技术招聘，包括前端、后端、运维
+- 前端技术培训与分享
+- Scrum 培训
+
+<block class="experience-block">
+  <p><span class="experience-sub-title">架构</span></p>
+</block>
+
+- Flutter App 整体架构设计
+- 主导基于 k8s 的微服务架构设计
+- NodeJS 微服务架构设计，gRPC、熔断、重试、监控、日志
+- SSR 方案设计
+- 前端技术选型与架构设计

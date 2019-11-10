@@ -4,7 +4,7 @@ const merge = require('webpack-merge')
 const config = require('./webpack.common')
 
 module.exports = merge(config, {
-  devtool: 'inline-source-map',
+  devtool: '#cheap-module-source-map',
 
   devServer: {
     hot: true,
@@ -23,16 +23,12 @@ module.exports = merge(config, {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: ['cache-loader', 'happypack/loader?id=ts'],
+        use: ['happypack/loader?id=ts'],
         exclude: /node_modules/,
       },
       {
-        test: /\.module\.css$/,
-        loaders: ['cache-loader', 'happypack/loader?id=moduleCss'],
-      },
-      {
-        test: /^((?!\.module).)*css$/,
-        loaders: ['cache-loader', 'happypack/loader?id=css'],
+        test: /\.css$/,
+        loaders: ['happypack/loader?id=css'],
       },
     ],
   },

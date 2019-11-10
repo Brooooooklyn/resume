@@ -1,6 +1,6 @@
 import React from 'react'
 
-const style = require('./style.module.css')
+import { Education, TitleWrap, Content, Title } from './style'
 
 export interface EducationProps {
   title: string
@@ -13,14 +13,14 @@ export class EducationComponent extends React.PureComponent<EducationProps> {
       __html: this.props.content,
     }
     return (
-      <section className={style.education}>
-        <div className={style.titleWrap}>
+      <Education>
+        <TitleWrap>
           <i className="icon icon-human" />
-          <span className={style.title}>{this.props.title}</span>
-        </div>
+          <Title>{this.props.title}</Title>
+        </TitleWrap>
         <hr />
-        <div className={style.content} dangerouslySetInnerHTML={inner} />
-      </section>
+        <Content dangerouslySetInnerHTML={inner} />
+      </Education>
     )
   }
 }
