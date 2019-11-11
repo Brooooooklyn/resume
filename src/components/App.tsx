@@ -6,8 +6,6 @@ import { EducationComponent, educationProps } from './education'
 import { Knowledge, knowledgeProps } from './knowledge'
 import { Lang } from '../globalState'
 
-import './App.css'
-
 interface AppProps {
   lang: Lang
 }

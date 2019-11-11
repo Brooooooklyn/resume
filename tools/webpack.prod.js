@@ -1,20 +1,41 @@
-const { join } = require('path')
+const { join, resolve } = require('path')
 const merge = require('webpack-merge')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const nodeExternals = require('webpack-node-externals')
 const config = require('./webpack.common')
 
 module.exports = merge(config, {
+  entry: {
+    main: './server.tsx',
+  },
+  output: {
+    filename: 'server-bundle.js',
+    libraryTarget: 'commonjs2',
+    path: resolve(process.cwd(), 'lambda'),
+    publicPath: '/',
+  },
+  externals: nodeExternals({
+    modulesDir: join(__dirname, '..', 'node_modules'),
+    whitelist: [
+      /\.(eot|woff|woff2|ttf|otf)$/,
+      /\.(svg|png|jpg|jpeg|gif|ico|webm)$/,
+      /\.(mp4|mp3|ogg|swf|webp)$/,
+      /\.(css|scss|sass|less|styl)$/,
+    ],
+  }),
+  target: 'node',
+  node: false,
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
         use: ['cache-loader', 'happypack/loader?id=ts'],
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -39,12 +60,6 @@ module.exports = merge(config, {
 
   mode: 'production',
 
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
-
   plugins: [
     new MiniCssExtractPlugin({
       filename: `[name].[chunkhash:8].css`,
@@ -53,6 +68,7 @@ module.exports = merge(config, {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',
+        IS_PUBLIC: process.env.IS_PUBLIC || false,
       },
     }),
   ],

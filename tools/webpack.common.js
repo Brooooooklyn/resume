@@ -1,7 +1,6 @@
 const { resolve, join } = require('path')
 const os = require('os')
 const HappyPack = require('happypack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
@@ -11,7 +10,7 @@ const config = {
     main: './src/index.tsx',
   },
   output: {
-    filename: 'js/[name].[hash].js',
+    filename: 'js/[name].js',
 
     path: resolve(process.cwd(), 'dist'),
 
@@ -51,12 +50,6 @@ const config = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/index.html',
-      inject: true,
-    }),
-
     new HappyPack({
       id: 'ts',
       loaders: [

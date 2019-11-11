@@ -9,14 +9,12 @@ import { globalStyles } from './style'
 
 const $root = document.getElementById('root') as HTMLElement
 
-const render = (Component: any, lang: Lang) => {
-  ReactDOM.render(
-    (
-      <>
-        <Global styles={globalStyles} />
-        <Component lang={lang} />
-      </>
-    ),
+export const render = (Component: any, lang: Lang) => {
+  ReactDOM.hydrate(
+    <>
+      <Global styles={globalStyles} />
+      <Component lang={lang} />
+    </>,
     $root,
   )
 }

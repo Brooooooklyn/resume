@@ -8,7 +8,6 @@ module.exports = function() {
       stage: 0,
     }),
     autoprefixer(),
-    require('postcss-nested'),
     cssnano(),
   ]
 

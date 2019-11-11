@@ -1,6 +1,7 @@
 const { resolve } = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = require('./webpack.common')
 
 module.exports = merge(config, {
@@ -38,5 +39,11 @@ module.exports = merge(config, {
     new webpack.NamedModulesPlugin(),
     // enable HMR globally
     new webpack.HotModuleReplacementPlugin(),
+
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/index.html',
+      inject: true,
+    }),
   ],
 })

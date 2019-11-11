@@ -8,7 +8,7 @@ const props: {
     name: '龙逸楠',
     email: 'lynweklm@gmail.com',
     site: 'https://lynvv.xyz',
-    phone: '17621988985',
+    phone: process.env.IS_PUBLIC ? 'xxxxxxxxxxx' : '17621988985',
     github: {
       name: 'Brooooooklyn',
       url: 'https://github.com/Brooooooklyn',
@@ -17,7 +17,7 @@ const props: {
       name: '太狼',
       url: 'https://www.zhihu.com/people/Broooooklyn',
     },
-    wechat: 'lynweklm',
+    wechat: process.env.IS_PUBLIC ? 'xxxxxxxx' : 'lynweklm',
   },
   get en() {
     return {
