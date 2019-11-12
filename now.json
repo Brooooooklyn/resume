@@ -1,12 +1,16 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "lambda/server-bundle.js", "use": "@now/node" }
+  ],
   "env": {
     "IS_PUBLIC": "true",
     "NODE_ENV": "production"
   },
   "build": {
     "env": {
-      "IS_PUBLIC": "true"
+      "IS_PUBLIC": "true",
+      "NODE_ENV": "production"
     }
   },
   "alias": ["resume.lynvv.xyz"],
