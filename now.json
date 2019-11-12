@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "resume",
   "builds": [
     { "src": "lambda/server-bundle.js", "use": "@now/node" }
   ],
@@ -14,18 +13,13 @@
       "NODE_ENV": "production"
     }
   },
-  "public": false,
-  "github": {
-    "enabled": true
-  },
   "alias": ["resume.lynvv.xyz"],
   "routes": [
     {
       "src": "/.*",
       "dest": "/lambda/server-bundle.js",
       "headers": {
-        "cache-control": "s-maxage=86400",
-        "link": "</app.css>; as=style; rel=preload, </app.js>; as=script; rel=preload"
+        "cache-control": "s-maxage=86400"
       }
     }
   ]
