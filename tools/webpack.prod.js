@@ -31,7 +31,7 @@ module.exports = merge(config, {
       {
         test: /\.(ts|tsx)$/,
         use: ['cache-loader', 'happypack/loader?id=ts'],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
@@ -68,7 +68,7 @@ module.exports = merge(config, {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',
-        IS_PUBLIC: process.env.IS_PUBLIC || false,
+        IS_PUBLIC: process.env.IS_PUBLIC === 'true',
       },
     }),
   ],
