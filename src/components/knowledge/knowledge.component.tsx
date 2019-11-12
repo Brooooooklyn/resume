@@ -1,4 +1,5 @@
 import React from 'react'
+import { Star } from '@ant-design/icons'
 import { KnowledgeWrapper, Content, KnowledgeWrap, Title } from './style'
 
 export interface KnowledgeProps {
@@ -14,7 +15,7 @@ export class Knowledge extends React.PureComponent<KnowledgeProps> {
     return (
       <KnowledgeWrapper>
         <KnowledgeWrap>
-          <i className="icon icon-star-stroke" />
+          <Star />
           <Title>{this.props.title}</Title>
         </KnowledgeWrap>
         <hr />

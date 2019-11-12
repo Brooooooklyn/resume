@@ -18,7 +18,7 @@ export const globalStyles = css({
     },
   },
   code: {
-    fontFamily: '\'Monaco\', \'Courier New\'',
+    fontFamily: "'Monaco', 'Courier New'",
   },
 
   blockquote: {
@@ -26,7 +26,7 @@ export const globalStyles = css({
     borderLeft: '0.25em solid #dfe2e5',
     p: {
       color: '#6a737d !important',
-    }
+    },
   },
 
   section: {
@@ -49,10 +49,10 @@ export const globalStyles = css({
 
     'a:focus, a:hover': {
       color: '#03a9f4',
-    }
+    },
   },
 
   'li ul': {
     marginLeft: '20px',
-  }
+  },
 })

@@ -3,6 +3,8 @@ const os = require('os')
 const HappyPack = require('happypack')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
+const svgoConfig = require('./svgo.config')
+
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
 
 const config = {
@@ -20,12 +22,16 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(svg|cur)$/,
-        use: ['file-loader'],
-      },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        use: ['file-loader'],
+        test: /\.svg$/,
+        use: [
+          {
+            loader: '@svgr/webpack',
+            options: {
+              icon: true,
+              svgoConfig,
+            },
+          },
+        ],
       },
       {
         test: /\.md$/,

@@ -1,5 +1,13 @@
 import React from 'react'
-import { HeaderWrapper, Name, HeaderInfoWrapper, HeaderInfo, HeaderInfoContent, HeaderInfoContentSpan } from './style'
+import { Mail, Link, Phone, Github, Zhihu, Wechat } from '@ant-design/icons'
+import {
+  HeaderWrapper,
+  Name,
+  HeaderInfoWrapper,
+  HeaderInfo,
+  HeaderInfoContent,
+  HeaderInfoContentSpan,
+} from './style'
 
 export interface HeaderProps {
   name: string
@@ -25,46 +33,37 @@ export class Header extends React.PureComponent<HeaderProps> {
         <hr />
         <HeaderInfoWrapper>
           <HeaderInfo>
-            <i className="icon icon-envelope" />
+            <Mail />
             <HeaderInfoContent href="mailto:lynweklm@gmail.com">
               {this.props.email}
             </HeaderInfoContent>
           </HeaderInfo>
           <HeaderInfo>
-            <i className="icon icon-rss" />
-            <HeaderInfoContent
-              href={this.props.site}
-              target="_blank"
-            >
+            <Link />
+            <HeaderInfoContent href={this.props.site} target="_blank">
               {this.props.site}
             </HeaderInfoContent>
           </HeaderInfo>
           <HeaderInfo>
-            <i className="icon icon-phone" />
+            <Phone />
             <HeaderInfoContent href="tel:+86-018516508691">
               {this.props.phone}
             </HeaderInfoContent>
           </HeaderInfo>
           <HeaderInfo>
-            <i className="icon icon-github" />
-            <HeaderInfoContent
-              href={this.props.github.url}
-              target="_blank"
-            >
+            <Github />
+            <HeaderInfoContent href={this.props.github.url} target="_blank">
               {this.props.github.name}
             </HeaderInfoContent>
           </HeaderInfo>
           <HeaderInfo>
-            <i className="icon icon-zhihu" />
-            <HeaderInfoContent
-              href={this.props.zhihu.url}
-              target="_blank"
-            >
+            <Zhihu />
+            <HeaderInfoContent href={this.props.zhihu.url} target="_blank">
               {this.props.zhihu.name}
             </HeaderInfoContent>
           </HeaderInfo>
           <HeaderInfo>
-            <i className="icon icon-wechat" />
+            <Wechat />
             <HeaderInfoContentSpan>{this.props.wechat}</HeaderInfoContentSpan>
           </HeaderInfo>
         </HeaderInfoWrapper>

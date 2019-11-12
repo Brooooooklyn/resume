@@ -24,13 +24,7 @@ export const HeaderInfo = styled.div({
   width: '40%',
   display: 'flex',
   padding: '2.5px 0',
-  '.icon': {
-    height: '20px',
-    '&::before': {
-      position: 'relative',
-      top: '2px',
-    },
-  },
+  alignItems: 'center',
 })
 
 export const headerInfoContentStyles = {

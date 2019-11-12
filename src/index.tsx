@@ -4,7 +4,6 @@ import { Global } from '@emotion/core'
 // AppContainer is a necessary wrapper component for HMR
 import App from './components/App'
 import globalState, { Lang } from './globalState'
-import 'tb-icons/lib/styles/tb-icons'
 import { globalStyles } from './style'
 
 const $root = document.getElementById('root') as HTMLElement

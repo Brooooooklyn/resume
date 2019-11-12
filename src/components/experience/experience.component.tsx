@@ -1,6 +1,18 @@
 import React from 'react'
 import { Global } from '@emotion/core'
-import { Body, CompanyName, CompanyWrapper, ExperienceWrapper, Title, ExperienceBody, WorkTitle, WorkTime, TitleContent, experienceGlobalStyle } from './style'
+import TieSvg from 'tb-icons/lib/svgs/tie.svg'
+import {
+  Body,
+  CompanyName,
+  CompanyWrapper,
+  ExperienceWrapper,
+  Title,
+  ExperienceBody,
+  WorkTitle,
+  WorkTime,
+  TitleContent,
+  experienceGlobalStyle,
+} from './style'
 
 export interface ExperienceProps {
   title: string
@@ -27,7 +39,7 @@ export class Experience extends React.PureComponent<ExperienceProps> {
   private renderTitle() {
     return (
       <Title>
-        <i className="icon icon-team-tie" />
+        <TieSvg />
         <TitleContent>{this.props.title}</TitleContent>
       </Title>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import HumanSvg from 'tb-icons/lib/svgs/human.svg'
 
 import { Education, TitleWrap, Content, Title } from './style'
 
@@ -15,7 +16,7 @@ export class EducationComponent extends React.PureComponent<EducationProps> {
     return (
       <Education>
         <TitleWrap>
-          <i className="icon icon-human" />
+          <HumanSvg />
           <Title>{this.props.title}</Title>
         </TitleWrap>
         <hr />
