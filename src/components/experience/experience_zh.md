@@ -40,13 +40,6 @@
 ==split==
 
 <block class="experience-block">
-  <p><span class="experience-sub-title">团队建设</span></p>
-</block>
-
-- 主导团队招聘，组建团队
-- 带团队。包括任务分配，技术输出和团队文化培养
-
-<block class="experience-block">
   <p><span class="experience-sub-title">研发效率与代码质量</span></p>
 </block>
 
@@ -73,6 +66,13 @@
 - 迁移核心项目从 Sails.js -> NestJS
 - 一个 Node 端的 Canvas Renderer 项目重构，老的架构是 Puppetter + Screenshot，使用 [actix-web](https://github.com/actix/actix-web) + [cairo](https://github.com/gtk-rs/cairo) 重构
 
+<block class="experience-block">
+  <p><span class="experience-sub-title">团队建设</span></p>
+</block>
+
+- 主导团队招聘，组建团队
+- 带团队。包括任务分配，技术输出和团队文化培养
+
 ==split==
 
 <block class="experience-block">
@@ -83,15 +83,6 @@
 - 整站的手动发布+传统单机云服务器架构到全站 Kubernetes
 
 <block class="experience-block">
-  <p><span class="experience-sub-title">团队建设</span></p>
-</block>
-
-- 主导公司的技术招聘，包括前端、后端、运维
-- 前端技术培训与分享
-- k8s 与 Helm 相关的技术分享
-- Scrum 培训
-
-<block class="experience-block">
   <p><span class="experience-sub-title">架构</span></p>
 </block>
 
@@ -100,3 +91,12 @@
 - NodeJS 微服务架构设计，gRPC、熔断、重试、监控、日志
 - Web SSR 方案设计
 - 前端技术选型与架构设计
+
+<block class="experience-block">
+  <p><span class="experience-sub-title">团队建设</span></p>
+</block>
+
+- 主导公司的技术招聘，包括前端、后端、运维
+- 前端技术培训与分享
+- k8s 与 Helm 相关的技术分享
+- Scrum 培训
