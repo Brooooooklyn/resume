@@ -10,8 +10,7 @@ module.exports = merge(config, {
     main: './server.tsx',
   },
   output: {
-    filename: 'server-bundle.js',
-    libraryTarget: 'commonjs2',
+    filename: 'render.js',
     path: resolve(process.cwd(), 'lambda'),
     publicPath: '/',
   },

@@ -9,20 +9,5 @@
       "IS_PUBLIC": "true"
     }
   },
-  "alias": ["resume.lynvv.xyz"],
-  "functions": {
-    "lambda/server-bundle.js": {
-      "memory": 3008,
-      "maxDuration": 60
-    }
-  },
-  "routes": [
-    {
-      "src": "/.*",
-      "dest": "/lambda/server-bundle.js",
-      "headers": {
-        "cache-control": "s-maxage=86400"
-      }
-    }
-  ]
+  "alias": ["resume.lynvv.xyz"]
 }
