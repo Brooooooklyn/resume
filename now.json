@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "lambda/server-bundle.js", "use": "@now/node" }
-  ],
   "env": {
     "IS_PUBLIC": "true",
     "NODE_ENV": "production"
@@ -17,7 +14,7 @@
   "routes": [
     {
       "src": "/.*",
-      "dest": "/lambda/server-bundle.js",
+      "dest": "/api/server-bundle.js",
       "headers": {
         "cache-control": "s-maxage=86400"
       }
