@@ -6,8 +6,7 @@
   },
   "build": {
     "env": {
-      "IS_PUBLIC": "true",
-      "NODE_ENV": "production"
+      "IS_PUBLIC": "true"
     }
   },
   "alias": ["resume.lynvv.xyz"],
