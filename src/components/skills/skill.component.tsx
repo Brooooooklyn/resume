@@ -1,6 +1,6 @@
 import React from 'react'
 import { SkillWrapper, TitleWrapper, Title, Content } from './style'
-import { Read } from '@ant-design/icons'
+import { Star } from '@ant-design/icons'
 
 export interface SkillProps {
   title: string
@@ -15,7 +15,7 @@ export class Skill extends React.PureComponent<SkillProps> {
     return (
       <SkillWrapper>
         <TitleWrapper>
-          <Read />
+          <Star />
           <Title>{this.props.title}</Title>
         </TitleWrapper>
         <hr />
