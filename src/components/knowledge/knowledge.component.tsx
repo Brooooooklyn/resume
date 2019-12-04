@@ -1,5 +1,5 @@
 import React from 'react'
-import { Read } from '@ant-design/icons'
+import Read from '@ant-design/icons/ReadOutlined'
 
 import { KnowledgeWrapper, Content, KnowledgeWrap, Title } from './style'
 

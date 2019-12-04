@@ -1,5 +1,10 @@
 import React from 'react'
-import { Mail, Link, Phone, Github, Zhihu, Wechat } from '@ant-design/icons'
+import Wechat from '@ant-design/icons/WechatFilled'
+import Mail from '@ant-design/icons/MailOutlined'
+import Github from '@ant-design/icons/GithubOutlined'
+import Phone from '@ant-design/icons/PhoneOutlined'
+import Link from '@ant-design/icons/LinkOutlined'
+import Zhihu from '@ant-design/icons/ZhihuOutlined'
 import {
   HeaderWrapper,
   Name,
