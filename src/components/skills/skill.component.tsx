@@ -1,6 +1,6 @@
 import React from 'react'
 import { SkillWrapper, TitleWrapper, Title, Content } from './style'
-import Star from '@ant-design/icons/StarOutlined'
+import { StarOutlined as Star } from '@ant-design/icons'
 
 export interface SkillProps {
   title: string
