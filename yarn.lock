@@ -7738,10 +7738,10 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.3"
 
-tb-icons@^0.2.139:
-  version "0.2.139"
-  resolved "https://registry.yarnpkg.com/tb-icons/-/tb-icons-0.2.139.tgz#bcd18e2ebb15511ce1f3c1b0931f5b32fc73f0a9"
-  integrity sha512-m5l2xOB0qlQNezO00kEiLyzYZFUA4ao6e0880l2vHwNueDVc0YEMJUzLwGO4WHVsRXueZcptIBqbc+vUpWIIeg==
+tb-icons@^0.2.140:
+  version "0.2.140"
+  resolved "https://registry.yarnpkg.com/tb-icons/-/tb-icons-0.2.140.tgz#e49543f20f8c37906f0075f73d4e2dc1525c1b32"
+  integrity sha512-Nwe4lR5hbDgRdx2NceKKOGoPnwJgTE0+kaLUScqGn0wmRuwJ/xKy/IC/5tj8FVLwX7sydqUmpz7xRb63nb1tYg==
 
 terser-webpack-plugin@^1.4.3:
   version "1.4.3"
