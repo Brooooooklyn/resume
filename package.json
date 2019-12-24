@@ -69,7 +69,7 @@
     "emotion-server": "^10.0.27",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "tb-icons": "^0.2.140",
+    "tb-icons": "^0.2.141",
     "tslib": "^1.10.0"
   },
   "prettier": {
