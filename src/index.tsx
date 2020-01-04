@@ -1,7 +1,6 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { Global } from '@emotion/core'
-// AppContainer is a necessary wrapper component for HMR
 import App from './components/App'
 import globalState, { Lang } from './globalState'
 import { globalStyles } from './style'
