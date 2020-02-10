@@ -7,8 +7,7 @@
     "build": "mkdir -p public && yarn build:webpack && node lambda/render.js",
     "build:webpack": "rm -rf lambda && NODE_ENV=production webpack --config ./tools/webpack.prod.js",
     "deploy": "yarn build && node ./cdn.js",
-    "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress"
   },
   "browserslist": [
     "last 1 version",
@@ -82,8 +81,7 @@
   },
   "lint-staged": {
     "*.@(ts|tsx|js|jsx)": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "husky": {
