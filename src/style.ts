@@ -189,6 +189,8 @@ export const globalStyles = css(
       width: '80%',
       left: '10%',
       marginBottom: '100px',
+      fontFamily:
+        '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif',
     },
     hr: {
       marginRight: '10px',
