@@ -880,10 +880,10 @@
   dependencies:
     glob-to-regexp "^0.4.1"
 
-"@jsdevtools/readdir-enhanced@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@jsdevtools/readdir-enhanced/-/readdir-enhanced-6.0.0.tgz#4d841023801647d2aaf0af4cd79806ba33520072"
-  integrity sha512-JSlur5fJowfwbeGw0rtaRSHbqqiLDQ3n1/BLHkDH7KtqpmtouUj9H9hriccqYrbVuTfuDettBlpd7iE3TcWDaA==
+"@jsdevtools/readdir-enhanced@6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@jsdevtools/readdir-enhanced/-/readdir-enhanced-6.0.3.tgz#0916be64d6677dd98b8bf6fd38e6e1057d31ada2"
+  integrity sha512-fDg/Qk6+vaMDGW3P4DN+i3Kx/t1Hk2FgKcxynA/N9a7hZZp3oBG55ia8lZP9CPWvIUDmOwIyDOo2/k9lTB2ciQ==
   dependencies:
     "@jsdevtools/file-path-filter" "^3.0.0"
 
@@ -6666,12 +6666,12 @@ readable-stream@~1.0.17, readable-stream@~1.0.27-1:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readdir-enhanced@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/readdir-enhanced/-/readdir-enhanced-6.0.0.tgz#f20dcb3696619c59b5f1c41da807f0f89d37bef8"
-  integrity sha512-z2YzLpJ2j5LAitLs7kYh7PJpA2QxLuob6fkxyFSpgBC3Pzve/gJGuJ5i6RFSbWbQqtcP4zFM/N4GrQCReylUfg==
+readdir-enhanced@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/readdir-enhanced/-/readdir-enhanced-6.0.3.tgz#68996e119d62852ca48ea1148a8bab066df61bea"
+  integrity sha512-il2lsGAN3AzufAKnuqFdEz6TVdCCuQEpSQ96ntgUlCCRZwbz9A2VFLph0BqXQ/Sw1/Rb1wTrkbtsJpNEjP7wuA==
   dependencies:
-    "@jsdevtools/readdir-enhanced" "6.0.0"
+    "@jsdevtools/readdir-enhanced" "6.0.3"
 
 readdirp@^2.2.1:
   version "2.2.1"
