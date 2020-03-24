@@ -25,7 +25,7 @@
     "@types/node": "^13.9.3",
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.5",
     "cache-loader": "^4.1.0",
     "cos-nodejs-sdk-v5": "^2.5.20",
     "css-loader": "^3.4.2",
