@@ -23,7 +23,7 @@
   "devDependencies": {
     "@svgr/webpack": "^5.3.0",
     "@types/node": "^13.9.4",
-    "@types/react": "^16.9.25",
+    "@types/react": "^16.9.26",
     "@types/react-dom": "^16.9.5",
     "autoprefixer": "^9.7.5",
     "cache-loader": "^4.1.0",
