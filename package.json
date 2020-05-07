@@ -30,7 +30,7 @@
     "cos-nodejs-sdk-v5": "^2.5.20",
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
-    "emotion-ts-plugin": "^0.5.3",
+    "emotion-ts-plugin": "^0.7.0",
     "file-loader": "^6.0.0",
     "fork-ts-checker-webpack-plugin": "^4.1.3",
     "happypack": "^5.0.1",
