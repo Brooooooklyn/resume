@@ -69,7 +69,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tb-icons": "^0.2.147",
-    "tslib": "^1.12.0"
+    "tslib": "^2.0.0"
   },
   "prettier": {
     "printWidth": 80,
