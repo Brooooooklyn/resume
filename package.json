@@ -27,7 +27,7 @@
     "@types/react-dom": "^16.9.8",
     "autoprefixer": "^9.8.0",
     "cache-loader": "^4.1.0",
-    "cos-nodejs-sdk-v5": "^2.5.20",
+    "cos-nodejs-sdk-v5": "^2.6.0",
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
     "emotion-ts-plugin": "^0.7.0",
