@@ -32,7 +32,7 @@
     "cssnano": "^4.1.10",
     "emotion-ts-plugin": "^0.7.0",
     "file-loader": "^6.0.0",
-    "fork-ts-checker-webpack-plugin": "^5.0.4",
+    "fork-ts-checker-webpack-plugin": "^5.0.5",
     "happypack": "^5.0.1",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
