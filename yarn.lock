@@ -8308,10 +8308,10 @@ webpack-merge@^5.0.9:
     clone-deep "^4.0.1"
     wildcard "^2.0.0"
 
-webpack-node-externals@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-2.2.0.tgz#97c3d44a6e61f6a74f2ba959707f6eb1ff1331ab"
-  integrity sha512-LE6qFs01TW3QFj9repPq+oME2h6VcBKZvX82qQ+3NY4xftrHRGL3OHp3uGLPBCP/P4ltDBiJWmQqy+oQWI6Blg==
+webpack-node-externals@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-2.3.0.tgz#c884c07103de080284e17c195fe87c68e2b9c668"
+  integrity sha512-d1scCn/L5hv73GMOlqSTO6ykLWOiUrZfn54xQYf7u0yGLlUSf5trq6HV/Gw8JIpH2NEyXS7bJec1gk9YR/Qdqw==
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
   version "1.4.3"
