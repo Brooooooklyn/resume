@@ -16,7 +16,7 @@ module.exports = merge(config, {
   },
   externals: nodeExternals({
     modulesDir: join(__dirname, '..', 'node_modules'),
-    whitelist: [
+    allowlist: [
       /\.(eot|woff|woff2|ttf|otf)$/,
       /\.(svg|png|jpg|jpeg|gif|ico|webm)$/,
       /\.(mp4|mp3|ogg|swf|webp)$/,
