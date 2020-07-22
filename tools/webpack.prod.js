@@ -1,5 +1,5 @@
 const { join, resolve } = require('path')
-const merge = require('webpack-merge')
+const { merge } = require('webpack-merge')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const nodeExternals = require('webpack-node-externals')
