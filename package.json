@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
-    "@emotion/core": "^10.0.28",
+    "@emotion/core": "^10.0.34",
     "@emotion/css": "^10.0.22",
     "@emotion/styled": "^10.0.27",
     "emotion": "^10.0.27",
