@@ -186,11 +186,12 @@ export const globalStyles = css(
   {
     '#root': {
       position: 'absolute',
-      width: '80%',
-      left: '10%',
-      marginBottom: '100px',
+      maxWidth: '900px',
+      left: '0',
+      right: '0',
+      margin: '0 auto 100px auto',
       fontFamily:
-        '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif',
+        '-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif',
     },
     hr: {
       marginRight: '10px',

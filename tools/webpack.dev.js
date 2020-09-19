@@ -2,6 +2,7 @@ const { resolve } = require('path')
 const webpack = require('webpack')
 const { merge } = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const config = require('./webpack.common')
 
 module.exports = merge(config, {
@@ -26,10 +27,6 @@ module.exports = merge(config, {
         test: /\.(ts|tsx)$/,
         use: ['happypack/loader?id=ts'],
         exclude: /node_modules/,
-      },
-      {
-        test: /\.css$/,
-        loaders: ['happypack/loader?id=css'],
       },
     ],
   },

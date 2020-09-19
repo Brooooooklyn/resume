@@ -1,8 +1,8 @@
 const { join, resolve } = require('path')
 const { merge } = require('webpack-merge')
 const webpack = require('webpack')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const nodeExternals = require('webpack-node-externals')
+
 const config = require('./webpack.common')
 
 module.exports = merge(config, {
@@ -29,30 +29,8 @@ module.exports = merge(config, {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: ['cache-loader', 'happypack/loader?id=ts'],
+        use: ['happypack/loader?id=ts'],
         exclude: /node_modules/,
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: false,
-              modules: false,
-              import: true,
-              importLoaders: 1,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              config: {
-                path: join(__dirname, 'postcss.config.js'),
-              },
-            },
-          },
-        ],
       },
     ],
   },
@@ -60,10 +38,6 @@ module.exports = merge(config, {
   mode: 'production',
 
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: `[name].[chunkhash:8].css`,
-    }),
-
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',

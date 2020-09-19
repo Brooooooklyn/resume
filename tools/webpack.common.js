@@ -48,7 +48,7 @@ const config = {
   },
 
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.css'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
 
   node: {
@@ -67,22 +67,6 @@ const config = {
             experimentalWatchApi: true,
             compiler: join(__dirname, 'ts.js'),
           },
-        },
-      ],
-      threadPool: happyThreadPool,
-    }),
-
-    new HappyPack({
-      id: 'css',
-      loaders: [
-        {
-          path: 'style-loader',
-        },
-        {
-          path: 'css-loader',
-        },
-        {
-          path: 'postcss-loader',
         },
       ],
       threadPool: happyThreadPool,

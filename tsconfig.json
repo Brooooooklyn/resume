@@ -8,7 +8,7 @@
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "ES5",
+    "target": "ES2018",
     "moduleResolution": "node",
     "module": "esnext",
     "jsx": "react",
