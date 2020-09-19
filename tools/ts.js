@@ -5,10 +5,13 @@ const transpileModule = ts.transpileModule
 
 const isProd = process.env.NODE_ENV === 'production'
 
-const emotionPlugin = createEmotionPlugin({ sourcemap: !isProd, autoInject: false })
+const emotionPlugin = createEmotionPlugin({
+  sourcemap: !isProd,
+  autoInject: false,
+})
 const plugins = [emotionPlugin]
 
-ts.transpileModule = function(input, transpileOptions) {
+ts.transpileModule = function (input, transpileOptions) {
   if (transpileOptions.transformers) {
     const before = transpileOptions.transformers.before || []
     transpileOptions.transformers.before = before.concat(plugins)

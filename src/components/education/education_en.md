@@ -1,2 +1,2 @@
-- [Wuhan Institute of Technology](https://www.wit.edu.cn/)，Bachelor of Chemical Engineering and Technology  *2011 ~ 2016*
+- [Wuhan Institute of Technology](https://www.wit.edu.cn/)，Bachelor of Chemical Engineering and Technology _2011 ~ 2016_
 - CET 6
