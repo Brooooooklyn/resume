@@ -24,7 +24,7 @@
     "@types/react-dom": "^16.9.8",
     "cos-nodejs-sdk-v5": "^2.8.2",
     "emotion-ts-plugin": "^0.7.0",
-    "file-loader": "^6.1.0",
+    "file-loader": "^6.1.1",
     "fork-ts-checker-webpack-plugin": "^5.2.0",
     "happypack": "^5.0.1",
     "html-loader": "^1.3.2",
