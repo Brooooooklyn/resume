@@ -54,7 +54,7 @@
     "@emotion/styled": "^10.0.27",
     "emotion": "^10.0.27",
     "emotion-server": "^10.0.27",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "tb-icons": "^0.2.148",
     "tslib": "^2.0.3"
