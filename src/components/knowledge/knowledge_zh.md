@@ -1,0 +1,4 @@
+- [《Learning TypeScript》](https://item.jd.com/12001593.html) 中文译者
+- [Learning RxJS](https://github.com/Brooooooklyn/learning-rxjs) 系列文章
+- [Teambition 数据层重构经验分享](http://slides.com/yinan/deck-1da42bbc-606f-4a9a-b67a-b6871e263377)
+- [RxJS 工程化实践](https://www.notion.so/RxJS-6420523f139f4e0f927517740e32088f)

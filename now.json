@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "env": {
+    "IS_PUBLIC": "true",
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "IS_PUBLIC": "true"
+    }
+  },
+  "alias": ["resume.lynvv.xyz"]
+}

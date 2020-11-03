@@ -1,0 +1,81 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "LongYinan's resume",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p public && yarn build:webpack && node lambda/render.js",
+    "build:webpack": "rm -rf lambda && NODE_ENV=production webpack --config ./tools/webpack.prod.js",
+    "deploy": "yarn build && node ./cdn.js",
+    "format": "run-p format:md format:json format:yaml format:source",
+    "format:md": "prettier --parser markdown --write './**/*.md'",
+    "format:json": "prettier --parser json --write './**/*.json'",
+    "format:source": "prettier --config ./package.json --write './**/*.{js,ts}'",
+    "format:yaml": "prettier --parser yaml --write './**/*.{yml,yaml}'",
+    "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress"
+  },
+  "keywords": ["Resume"],
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@svgr/webpack": "^5.4.0",
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
+    "@types/react-dom": "^16.9.9",
+    "cos-nodejs-sdk-v5": "^2.8.3",
+    "emotion-ts-plugin": "^0.7.0",
+    "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^5.2.1",
+    "happypack": "^5.0.1",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "markdown-loader": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2",
+    "raw-loader": "^4.0.2",
+    "readdir-enhanced": "^6.0.4",
+    "svgo": "^1.3.2",
+    "svgo-loader": "^2.2.1",
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.3.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@emotion/core": "^10.1.1",
+    "@emotion/css": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "emotion": "^10.0.27",
+    "emotion-server": "^10.0.27",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tb-icons": "^0.2.148",
+    "tslib": "^2.0.3"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "parser": "typescript"
+  },
+  "lint-staged": {
+    "*.@(js|ts|tsx)": ["prettier --write"],
+    "*.@(yml|yaml)": ["prettier --parser yaml --write"],
+    "*.md": ["prettier --parser markdown --write"],
+    "*.json": ["prettier --parser json --write"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

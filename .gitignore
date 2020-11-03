@@ -1,0 +1,8 @@
+node_modules
+*.log
+.vscode
+dist
+.awcache
+.cache-loader
+lambda
+public

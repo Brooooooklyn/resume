@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "ES2018",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "jsx": "react",
+    "skipLibCheck": true
+  }
+}

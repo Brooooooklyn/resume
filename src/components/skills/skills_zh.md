@@ -1,0 +1,9 @@
+- 阅读过 `RxJS` 部分源码，精通 `RxJS` 并贡献过代码
+- 深入理解并熟练开发基于 `React + Redux + TypeScript` 的应用
+- 熟悉 前端和 `Nodejs` 单元测试，熟练使用 `ava` , `jest` , `mocha` 等测试框架
+- 了解 `Angular2+` 的部分原理，对其核心组成部分 `zone.js` 有深入的了解并且贡献过代码
+- 有过大型单页 Web 应用实战经验，处理过大规模的数据变更场景下的优化，了解前端性能优化与调试技巧
+- 熟悉 `Docker`, `k8s`, `Helm`
+- 熟悉 ES2015+ 特性，在项目中大量使用 `async/await`，`decorator` 等特性
+- 能熟练使用 `Rust` 开发 `web server`
+- 熟练使用 `Git`, `Gulp`, `Webpack`, `Typescript`, `Less`, `Coffeescript`, `ES5`, `ES2015+`
