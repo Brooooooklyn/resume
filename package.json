@@ -50,7 +50,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
     "@emotion/core": "^10.1.1",
-    "@emotion/css": "^10.0.27",
+    "@emotion/css": "^11.0.0",
     "@emotion/styled": "^10.0.27",
     "emotion": "^10.0.27",
     "emotion-server": "^10.0.27",
