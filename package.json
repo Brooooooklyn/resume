@@ -48,7 +48,7 @@
     "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.2.2",
+    "@ant-design/icons": "^4.3.0",
     "@emotion/core": "^10.1.1",
     "@emotion/css": "^11.0.0",
     "@emotion/styled": "^10.0.27",
