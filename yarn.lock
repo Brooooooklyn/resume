@@ -2727,17 +2727,17 @@ emotion-server@^11.0.0:
   resolved "https://registry.yarnpkg.com/emotion-server/-/emotion-server-11.0.0.tgz#45b18c8a840f3289bdf0d1d8b6abc30fbbdbe74a"
   integrity sha512-RVTM78geKL2MxRcl4CkmQZREGtVzoxXKdzVHnAfEn76GCU+fkI6EprVGeVo3tdnENk58QosfqlKgPWQ7MUXwlA==
 
-emotion-ts-plugin@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.npmjs.org/emotion-ts-plugin/-/emotion-ts-plugin-0.7.0.tgz#cb94c323cf365ccc266c943ca0d8a8051354f9dc"
-  integrity sha512-ZK5yknMaQU10YCHFN1KzpLpkcASQmA2OCgMUvZKNr+qsUuR4D5g8VBc11fLyc/4B1HAmLDx3FLn86CAKcGc3NQ==
+emotion-ts-plugin@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/emotion-ts-plugin/-/emotion-ts-plugin-1.0.0.tgz#3c751f325fcd9dbdcca462be2624f5b7821d4363"
+  integrity sha512-F8b2fU5o8/jsfjxo13kK8R726B2/6BodkfxtxhTVQ4uRquG2acZaC6OH03KKlSVm1UEFko+Ib+cN2z1mzHmTDg==
   dependencies:
     "@emotion/hash" "^0.8.0"
     convert-source-map "^1.7.0"
     find-root "^1.1.0"
-    lodash "^4.17.15"
+    lodash "^4.17.20"
     source-map "^0.7.3"
-    tslib "^1.10.0"
+    tslib "^2.0.3"
 
 emotion@^11.0.0:
   version "11.0.0"
