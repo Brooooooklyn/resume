@@ -21,7 +21,7 @@
     "@svgr/webpack": "^5.5.0",
     "@types/node": "^14.14.9",
     "@types/react": "^17.0.0",
-    "@types/react-dom": "^16.9.9",
+    "@types/react-dom": "^17.0.0",
     "cos-nodejs-sdk-v5": "^2.8.3",
     "emotion-ts-plugin": "^1.0.0",
     "file-loader": "^6.2.0",
