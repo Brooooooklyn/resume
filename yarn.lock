@@ -2727,10 +2727,10 @@ emotion-server@^11.0.0:
   resolved "https://registry.yarnpkg.com/emotion-server/-/emotion-server-11.0.0.tgz#45b18c8a840f3289bdf0d1d8b6abc30fbbdbe74a"
   integrity sha512-RVTM78geKL2MxRcl4CkmQZREGtVzoxXKdzVHnAfEn76GCU+fkI6EprVGeVo3tdnENk58QosfqlKgPWQ7MUXwlA==
 
-emotion-ts-plugin@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/emotion-ts-plugin/-/emotion-ts-plugin-1.0.0.tgz#3c751f325fcd9dbdcca462be2624f5b7821d4363"
-  integrity sha512-F8b2fU5o8/jsfjxo13kK8R726B2/6BodkfxtxhTVQ4uRquG2acZaC6OH03KKlSVm1UEFko+Ib+cN2z1mzHmTDg==
+emotion-ts-plugin@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/emotion-ts-plugin/-/emotion-ts-plugin-1.0.1.tgz#8e2e2c0e59165b3728dc1ac5b5a775589fc02e97"
+  integrity sha512-6EBBldfLNJFTS9YOuR1lf0Iw8tP7arLOUjbFoS67ZKLfrQTsoaTCCaS05HBergKfWYXWKaEEG1FN+RboHpnUlQ==
   dependencies:
     "@emotion/hash" "^0.8.0"
     convert-source-map "^1.7.0"
