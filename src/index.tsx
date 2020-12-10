@@ -1,5 +1,6 @@
 import { Global } from '@emotion/react'
-import * as ReactDOM from 'react-dom'
+import { StrictMode } from 'react'
+import { hydrate } from 'react-dom'
 
 import { App } from './components/App'
 import globalState, { Lang } from './globalState'
@@ -8,10 +9,12 @@ import { globalStyles } from './style'
 const $root = document.getElementById('root') as HTMLElement
 
 export const render = (Component: any, lang: Lang) => {
-  ReactDOM.hydrate(
+  hydrate(
     <>
       <Global styles={globalStyles} />
-      <Component lang={lang} />
+      <StrictMode>
+        <Component lang={lang} />
+      </StrictMode>
     </>,
     $root,
   )

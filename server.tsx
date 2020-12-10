@@ -1,9 +1,9 @@
-import React from 'react'
 import { renderToString } from 'react-dom/server'
-import { Global } from '@emotion/core'
+import { Global } from '@emotion/react'
 import { writeFileSync } from 'fs'
 import { join } from 'path'
-import App from './src/components/App'
+
+import { App } from './src/components/App'
 import { globalStyles } from './src/style'
 import globalState from './src/globalState'
 

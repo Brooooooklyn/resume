@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import css from '@emotion/css'
+import { css } from '@emotion/react'
 
 export const CompanyName = styled.span({
   fontSize: '20px',
