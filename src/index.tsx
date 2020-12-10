@@ -1,7 +1,7 @@
-import * as React from 'react'
+import { Global } from '@emotion/react'
 import * as ReactDOM from 'react-dom'
-import { Global } from '@emotion/core'
-import App from './components/App'
+
+import { App } from './components/App'
 import globalState, { Lang } from './globalState'
 import { globalStyles } from './style'
 

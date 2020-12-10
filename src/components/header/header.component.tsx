@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC, memo } from 'react'
 import {
   WechatFilled as Wechat,
   MailOutlined as Mail,
@@ -32,49 +32,45 @@ export interface HeaderProps {
   wechat: string
 }
 
-export class Header extends React.PureComponent<HeaderProps> {
-  render() {
-    return (
-      <HeaderWrapper>
-        <Name>{this.props.name}</Name>
-        <hr />
-        <HeaderInfoWrapper>
-          <HeaderInfo>
-            <Mail />
-            <HeaderInfoContent href="mailto:lynweklm@gmail.com">
-              {this.props.email}
-            </HeaderInfoContent>
-          </HeaderInfo>
-          <HeaderInfo>
-            <Link />
-            <HeaderInfoContent href={this.props.site} target="_blank">
-              {this.props.site}
-            </HeaderInfoContent>
-          </HeaderInfo>
-          <HeaderInfo>
-            <Phone />
-            <HeaderInfoContent href="tel:+86-018516508691">
-              {this.props.phone}
-            </HeaderInfoContent>
-          </HeaderInfo>
-          <HeaderInfo>
-            <Github />
-            <HeaderInfoContent href={this.props.github.url} target="_blank">
-              {this.props.github.name}
-            </HeaderInfoContent>
-          </HeaderInfo>
-          <HeaderInfo>
-            <Zhihu />
-            <HeaderInfoContent href={this.props.zhihu.url} target="_blank">
-              {this.props.zhihu.name}
-            </HeaderInfoContent>
-          </HeaderInfo>
-          <HeaderInfo>
-            <Wechat />
-            <HeaderInfoContentSpan>{this.props.wechat}</HeaderInfoContentSpan>
-          </HeaderInfo>
-        </HeaderInfoWrapper>
-      </HeaderWrapper>
-    )
-  }
-}
+export const Header: FC<HeaderProps> = memo((props) => (
+  <HeaderWrapper>
+    <Name>{props.name}</Name>
+    <hr />
+    <HeaderInfoWrapper>
+      <HeaderInfo>
+        <Mail />
+        <HeaderInfoContent href="mailto:lynweklm@gmail.com">
+          {props.email}
+        </HeaderInfoContent>
+      </HeaderInfo>
+      <HeaderInfo>
+        <Link />
+        <HeaderInfoContent href={props.site} target="_blank">
+          {props.site}
+        </HeaderInfoContent>
+      </HeaderInfo>
+      <HeaderInfo>
+        <Phone />
+        <HeaderInfoContent href="tel:+86-018516508691">
+          {props.phone}
+        </HeaderInfoContent>
+      </HeaderInfo>
+      <HeaderInfo>
+        <Github />
+        <HeaderInfoContent href={props.github.url} target="_blank">
+          {props.github.name}
+        </HeaderInfoContent>
+      </HeaderInfo>
+      <HeaderInfo>
+        <Zhihu />
+        <HeaderInfoContent href={props.zhihu.url} target="_blank">
+          {props.zhihu.name}
+        </HeaderInfoContent>
+      </HeaderInfo>
+      <HeaderInfo>
+        <Wechat />
+        <HeaderInfoContentSpan>{props.wechat}</HeaderInfoContentSpan>
+      </HeaderInfo>
+    </HeaderInfoWrapper>
+  </HeaderWrapper>
+))

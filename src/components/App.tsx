@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC, memo } from 'react'
 import { Header, headerProps } from './header'
 import { Experience, experienceProps } from './experience'
 import { Skill, skillProps } from './skills'
@@ -10,16 +10,14 @@ interface AppProps {
   lang: Lang
 }
 
-export default class extends React.PureComponent<AppProps> {
-  render() {
-    return (
-      <div>
-        <Header {...headerProps[this.props.lang]} />
-        <Experience {...experienceProps[this.props.lang]} />
-        <Skill {...skillProps[this.props.lang]} />
-        <Knowledge {...knowledgeProps[this.props.lang]} />
-        <EducationComponent {...educationProps[this.props.lang]} />
-      </div>
-    )
-  }
-}
+export const App: FC<AppProps> = memo((props) => {
+  return (
+    <div>
+      <Header {...headerProps[props.lang]} />
+      <Experience {...experienceProps[props.lang]} />
+      <Skill {...skillProps[props.lang]} />
+      <Knowledge {...knowledgeProps[props.lang]} />
+      <EducationComponent {...educationProps[props.lang]} />
+    </div>
+  )
+})

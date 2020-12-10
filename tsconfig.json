@@ -11,7 +11,7 @@
     "target": "ES2018",
     "moduleResolution": "node",
     "module": "esnext",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "skipLibCheck": true
   }
 }

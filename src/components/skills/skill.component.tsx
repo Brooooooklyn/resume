@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC, memo } from 'react'
 import { SkillWrapper, TitleWrapper, Title, Content } from './style'
 import { StarOutlined as Star } from '@ant-design/icons'
 
@@ -7,20 +7,18 @@ export interface SkillProps {
   content: string
 }
 
-export class Skill extends React.PureComponent<SkillProps> {
-  render() {
-    const inner = {
-      __html: this.props.content,
-    }
-    return (
-      <SkillWrapper>
-        <TitleWrapper>
-          <Star />
-          <Title>{this.props.title}</Title>
-        </TitleWrapper>
-        <hr />
-        <Content dangerouslySetInnerHTML={inner} />
-      </SkillWrapper>
-    )
+export const Skill: FC<SkillProps> = memo((props) => {
+  const inner = {
+    __html: props.content,
   }
-}
+  return (
+    <SkillWrapper>
+      <TitleWrapper>
+        <Star />
+        <Title>{props.title}</Title>
+      </TitleWrapper>
+      <hr />
+      <Content dangerouslySetInnerHTML={inner} />
+    </SkillWrapper>
+  )
+})
