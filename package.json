@@ -22,7 +22,7 @@
     "@types/node": "^14.14.16",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "cos-nodejs-sdk-v5": "^2.8.3",
+    "cos-nodejs-sdk-v5": "^2.8.4",
     "emotion-ts-plugin": "^1.0.1",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^6.0.8",
