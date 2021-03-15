@@ -2004,12 +2004,7 @@ commander@^6.2.0:
   resolved "https://registry.npmjs.org/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
-commander@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/commander/-/commander-7.0.0.tgz#3e2bbfd8bb6724760980988fb5b22b7ee6b71ab2"
-  integrity sha512-ovx/7NkTrnPuIV8sqk/GjUIIM1+iUQeqA3ye2VNpq9sVoiZsooObWlQy+OPWGI17GDaEoybuAGJm6U8yC077BA==
-
-commander@^7.1.0:
+commander@^7.0.0, commander@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.1.0.tgz#f2eaecf131f10e36e07d894698226e36ae0eb5ff"
   integrity sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==
@@ -5729,7 +5724,7 @@ svgo-loader@^3.0.0:
     loader-utils "^1.0.3"
     svgo "^2.2.0"
 
-svgo@^1.2.2, svgo@^1.3.2:
+svgo@^1.2.2:
   version "1.3.2"
   resolved "https://registry.npmjs.org/svgo/-/svgo-1.3.2.tgz#b6dc511c063346c9e415b81e43401145b96d4167"
   integrity sha512-yhy/sQYxR5BkC98CY7o31VGsg014AKLEPxdfhora76l36hD9Rdy5NZA/Ocn6yayNPgSamYdtX2rFJdcv07AYVw==
@@ -5748,10 +5743,10 @@ svgo@^1.2.2, svgo@^1.3.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-svgo@^2.2.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/svgo/-/svgo-2.2.1.tgz#e868b98f8eae2d8d33356cc456094665bfd68926"
-  integrity sha512-WrKhe5CMm/O5gchTQKGogKYXGbOC0JBZnHqvaCTEbsMuq4prxQHB/AZgif8WwD4+9Nim4EECObmyjvkdC43iNg==
+svgo@^2.2.0, svgo@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/svgo/-/svgo-2.2.2.tgz#51d67c7149661282d22a3c8683f4795cdb40f687"
+  integrity sha512-kJugY2d0yrsONnG4YavppVkKmKULMw2iFRbB9+usyWqzTaqoBuUaqdMnQ2G1n5P1dmOA2tZvc5zmMM6sPOVBSQ==
   dependencies:
     "@trysound/sax" "0.1.1"
     chalk "^4.1.0"
