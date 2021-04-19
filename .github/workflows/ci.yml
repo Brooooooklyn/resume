@@ -1,8 +1,9 @@
-name: Test Commit
+name: Build
 
 on:
   push:
-    branches: [master, develop]
+    branches:
+      - main
   pull_request:
 
 jobs:
@@ -30,12 +31,3 @@ jobs:
         run: yarn build
         env:
           NODE_ENV: production
-
-  auto-merge:
-    runs-on: ubuntu-latest
-    needs: lint-test-build
-    steps:
-      - name: auto-merge
-        uses: ridedott/dependabot-auto-merge-action@master
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

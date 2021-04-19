@@ -13,9 +13,7 @@
     "format:yaml": "prettier --parser yaml --write './**/*.{yml,yaml}'",
     "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress"
   },
-  "keywords": [
-    "Resume"
-  ],
+  "keywords": ["Resume"],
   "author": "lynweklm@gmail.com",
   "license": "MIT",
   "devDependencies": {
@@ -67,18 +65,10 @@
     "parser": "typescript"
   },
   "lint-staged": {
-    "*.@(js|ts|tsx)": [
-      "prettier --write"
-    ],
-    "*.@(yml|yaml)": [
-      "prettier --parser yaml --write"
-    ],
-    "*.md": [
-      "prettier --parser markdown --write"
-    ],
-    "*.json": [
-      "prettier --parser json --write"
-    ]
+    "*.@(js|ts|tsx)": ["prettier --write"],
+    "*.@(yml|yaml)": ["prettier --parser yaml --write"],
+    "*.md": ["prettier --parser markdown --write"],
+    "*.json": ["prettier --parser json --write"]
   },
   "husky": {
     "hooks": {
