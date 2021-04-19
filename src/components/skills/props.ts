@@ -1,6 +1,6 @@
 import { SkillProps } from './skill.component'
 
-const content = require('./skills_zh.md')
+import content from './skills_zh.md'
 
 const props: {
   zh: SkillProps

@@ -1,6 +1,6 @@
 import { EducationProps } from './education.component'
 
-const contentZh = require('./education_zh.md')
+import contentZh from './education_zh.md'
 
 const props: {
   zh: EducationProps

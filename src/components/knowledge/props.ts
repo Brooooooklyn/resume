@@ -1,6 +1,6 @@
 import { KnowledgeProps } from './knowledge.component'
 
-const zhContent = require('./knowledge_zh.md')
+import zhContent from './knowledge_zh.md'
 
 export const props: {
   zh: KnowledgeProps

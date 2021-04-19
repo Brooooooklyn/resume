@@ -9,3 +9,7 @@ declare namespace NodeJS {
 declare module '*.svg' {
   export default any
 }
+
+declare module '*.md' {
+  export default any
+}
