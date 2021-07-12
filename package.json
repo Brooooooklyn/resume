@@ -18,7 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
-    "@types/node": "^16.0.0",
+    "@types/node": "^16.3.1",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.8",
     "emotion-ts-plugin": "^1.1.0",
