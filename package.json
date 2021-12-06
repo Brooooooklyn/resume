@@ -17,7 +17,7 @@
   "author": "lynweklm@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "@svgr/webpack": "^6.0.0",
+    "@svgr/webpack": "^6.1.1",
     "@types/node": "^16.11.11",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
