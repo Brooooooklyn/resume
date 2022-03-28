@@ -2497,10 +2497,10 @@ emotion-server@^11.0.0:
   resolved "https://registry.npmjs.org/emotion-server/-/emotion-server-11.0.0.tgz#45b18c8a840f3289bdf0d1d8b6abc30fbbdbe74a"
   integrity sha512-RVTM78geKL2MxRcl4CkmQZREGtVzoxXKdzVHnAfEn76GCU+fkI6EprVGeVo3tdnENk58QosfqlKgPWQ7MUXwlA==
 
-emotion-ts-plugin@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/emotion-ts-plugin/-/emotion-ts-plugin-2.0.0.tgz#eafb32a278a0fd2c5e72072f61758c0924b02ebe"
-  integrity sha512-Q7R+RqU2IwEEQyQ7kS45PZIfWzpqKAHQK1D5YgAc2XjiTOEAWaIloQC9HYBbN6v5YOVoPO9T/8uY7HW6oFD7Bg==
+emotion-ts-plugin@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/emotion-ts-plugin/-/emotion-ts-plugin-2.0.1.tgz#6ee5758f04d46a72063772b5d26c4d234546a55f"
+  integrity sha512-lL2FFkpgjCGEPDSDK6uwCVphj7jZeY5hNZ2zG2BWxREhS1VGwWxMIPflvoWMqCzNcU9zMdizrjV5RvzeI3GU4Q==
   dependencies:
     "@emotion/hash" "^0.8.0"
     convert-source-map "^1.8.0"
