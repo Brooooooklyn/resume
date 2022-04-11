@@ -1171,14 +1171,14 @@
     "@emotion/weak-memoize" "^0.2.5"
     stylis "4.0.13"
 
-"@emotion/css@^11.7.1":
-  version "11.7.1"
-  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-11.7.1.tgz#516b717340d36b0bbd2304ba7e1a090e866f8acc"
-  integrity sha512-RUUgPlMZunlc7SE5A6Hg+VWRzb2cU6O9xlV78KCFgcnl25s7Qz/20oQg71iKudpLqk7xj0vhbJlwcJJMT0BOZg==
+"@emotion/css@^11.9.0":
+  version "11.9.0"
+  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-11.9.0.tgz#d5aeaca5ed19fc61cbdc9e032ad0b32fa6e366be"
+  integrity sha512-S9UjCxSrxEHawOLnWw4upTwfYKb0gVQdatHejn3W9kPyXxmKv3HmjVfJ84kDLmdX8jR20OuDQwaJ4Um24qD9vA==
   dependencies:
     "@emotion/babel-plugin" "^11.7.1"
     "@emotion/cache" "^11.7.1"
-    "@emotion/serialize" "^1.0.0"
+    "@emotion/serialize" "^1.0.3"
     "@emotion/sheet" "^1.0.3"
     "@emotion/utils" "^1.0.0"
 
@@ -1212,7 +1212,7 @@
     "@emotion/weak-memoize" "^0.2.5"
     hoist-non-react-statics "^3.3.1"
 
-"@emotion/serialize@^1.0.0", "@emotion/serialize@^1.0.2", "@emotion/serialize@^1.0.3":
+"@emotion/serialize@^1.0.2", "@emotion/serialize@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-1.0.3.tgz#99e2060c26c6292469fb30db41f4690e1c8fea63"
   integrity sha512-2mSSvgLfyV3q+iVh3YWgNlUc2a9ZlDU7DjuP5MjK3AXRR0dYigCrP99aeFtaB2L/hjfEZdSThn5dsZ0ufqbvsA==
