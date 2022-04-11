@@ -20,7 +20,7 @@
     "@svgr/webpack": "^6.2.1",
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",
-    "@types/react-dom": "^17.0.14",
+    "@types/react-dom": "^18.0.0",
     "emotion-ts-plugin": "^2.0.1",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^7.2.2",
