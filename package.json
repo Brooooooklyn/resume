@@ -23,7 +23,7 @@
     "@types/react-dom": "^18.0.0",
     "emotion-ts-plugin": "^2.0.1",
     "file-loader": "^6.2.0",
-    "fork-ts-checker-webpack-plugin": "^7.2.3",
+    "fork-ts-checker-webpack-plugin": "^7.2.6",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
