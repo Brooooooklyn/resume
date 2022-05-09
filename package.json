@@ -52,7 +52,7 @@
     "emotion": "^11.0.0",
     "emotion-server": "^11.0.0",
     "react": "^18.1.0",
-    "react-dom": "^18.0.0",
+    "react-dom": "^18.1.0",
     "tb-icons": "^0.2.148",
     "tslib": "^2.4.0"
   },
