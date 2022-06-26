@@ -6,3 +6,10 @@ dist
 .cache-loader
 lambda
 public
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

@@ -13,7 +13,9 @@
     "format:yaml": "prettier --parser yaml --write './**/*.{yml,yaml}'",
     "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress"
   },
-  "keywords": ["Resume"],
+  "keywords": [
+    "Resume"
+  ],
   "author": "lynweklm@gmail.com",
   "license": "MIT",
   "devDependencies": {
@@ -27,7 +29,7 @@
     "html-loader": "^3.1.2",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.2",
+    "lint-staged": "^13.0.3",
     "markdown-loader": "^8.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
@@ -35,7 +37,7 @@
     "readdir-enhanced": "^6.0.4",
     "svgo": "^2.8.0",
     "svgo-loader": "^3.0.1",
-    "ts-loader": "^9.3.0",
+    "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.73.0",
@@ -46,13 +48,13 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@emotion/react": "^11.9.3",
     "@emotion/css": "^11.9.0",
+    "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "emotion": "^11.0.0",
     "emotion-server": "^11.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.1.0",
+    "react-dom": "^18.2.0",
     "tb-icons": "^0.2.148",
     "tslib": "^2.4.0"
   },
@@ -65,14 +67,23 @@
     "parser": "typescript"
   },
   "lint-staged": {
-    "*.@(js|ts|tsx)": ["prettier --write"],
-    "*.@(yml|yaml)": ["prettier --parser yaml --write"],
-    "*.md": ["prettier --parser markdown --write"],
-    "*.json": ["prettier --parser json --write"]
+    "*.@(js|ts|tsx)": [
+      "prettier --write"
+    ],
+    "*.@(yml|yaml)": [
+      "prettier --parser yaml --write"
+    ],
+    "*.md": [
+      "prettier --parser markdown --write"
+    ],
+    "*.json": [
+      "prettier --parser json --write"
+    ]
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }

@@ -1,5 +1,6 @@
 const { resolve } = require('path')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const webpack = require('webpack')
 
 const svgoConfig = require('./svgo.config')
 
@@ -19,11 +20,11 @@ const config = {
     rules: [
       {
         test: /\.svg$/,
+        issuer: /\.[jt]sx?$/,
         use: [
           {
             loader: '@svgr/webpack',
             options: {
-              icon: true,
               svgoConfig,
             },
           },
@@ -47,11 +48,15 @@ const config = {
     extensions: ['.tsx', '.ts', '.js'],
   },
 
-  node: {
-    process: true,
-  },
-
-  plugins: [new ForkTsCheckerWebpackPlugin()],
+  plugins: [
+    new ForkTsCheckerWebpackPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        PHONE: `"${process.env.PHONE || 'xxxxxxxxxxx'}"`,
+        WECHAT: `"${process.env.WECHAT || 'xxxxxxxx'}"`,
+      },
+    }),
+  ],
 }
 
 module.exports = config

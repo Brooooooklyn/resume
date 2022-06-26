@@ -6,17 +6,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = require('./webpack.common')
 
 module.exports = merge(config, {
-  devtool: '#cheap-module-source-map',
-
   devServer: {
     hot: true,
-    // enable HMR on the server
-
-    contentBase: join(__dirname, 'dist'),
-    // match the output path
-
-    publicPath: '/',
-    // match the output `publicPath`
+    historyApiFallback: true,
   },
 
   mode: 'development',
@@ -24,7 +16,7 @@ module.exports = merge(config, {
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.[jt]sx?$/,
         use: {
           loader: 'ts-loader',
           options: {
@@ -40,9 +32,6 @@ module.exports = merge(config, {
   },
 
   plugins: [
-    // enable HMR globally
-    new webpack.HotModuleReplacementPlugin(),
-
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',

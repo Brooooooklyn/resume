@@ -1,6 +1,6 @@
 const { join } = require('path')
 const { merge } = require('webpack-merge')
-const webpack = require('webpack')
+
 const nodeExternals = require('webpack-node-externals')
 
 const config = require('./webpack.common')
@@ -28,7 +28,7 @@ module.exports = merge(config, {
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.[jt]sx?$/,
         use: {
           loader: 'ts-loader',
           options: {
@@ -44,14 +44,4 @@ module.exports = merge(config, {
   },
 
   mode: 'production',
-
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"',
-        PHONE: `"${process.env.PHONE || 'xxxxxxxxxxx'}"`,
-        WECHAT: `"${process.env.WECHAT || 'xxxxxxxx'}"`,
-      },
-    }),
-  ],
 })
