@@ -34,7 +34,7 @@ const props: {
       },
       {
         name: 'LeetCode 中国',
-        time: '2018.6 ~ now',
+        time: '2018.6 ~ 2020.2',
         title: '合伙人、App 负责人、基础服务负责人',
         content: cnContents[3],
         url: 'https://leetcode-cn.com',
