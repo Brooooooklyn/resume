@@ -7,11 +7,11 @@
     "noUnusedParameters": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
-    "suppressImplicitAnyIndexErrors": true,
     "target": "ES2018",
     "moduleResolution": "node",
     "module": "esnext",
     "jsx": "react-jsx",
     "skipLibCheck": true
-  }
+  },
+  "exclude": ["node_modules", ".yarn", ".husky", ".github", "lambda"]
 }

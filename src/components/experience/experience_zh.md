@@ -28,7 +28,7 @@
   </p>
 </block>
 
-- 前端项目管理，CR/发布/上线
+- 前端项目管理, CR/发布/上线
 - 负责搭建前端团队内部的持续集成，自动化部署工具
 - 辅助各业务组的技术选型，框架搭建
 - 负责推动 Teambition 前端重构，从 `CoffeeScript + Backbone + jQuery` 到 `React + Redux + RxJS + TypeScript`
@@ -82,6 +82,7 @@
 
 - 全站 CDN & https & http2 迁移
 - 整站的手动发布+传统单机云服务器架构到全站 Kubernetes
+- Python/Node.js/Rust/Golang 等多种语言以及框架的微服务化设计, CI/CD 与自动化部署流程开发
 
 <block class="experience-block">
   <p><span class="experience-sub-title">架构</span></p>
@@ -101,3 +102,28 @@
 - 前端技术培训与分享
 - k8s 与 Helm 相关的技术分享
 - Scrum 培训
+
+==split==
+
+<block class="experience-block">
+  <p><span class="experience-sub-title">负责 TikTok Web 架构设计与性能优化</span></p>
+</block>
+
+Performance First 与 Robust First 的架构设计, 带领团队从 0 开始重写 https://tiktok.com, 它是基于 `React`，`TypeScript`，`RxJS` 的 SSR 应用, 在 LCP, TTI 等前端性能指标上与旧版本相比有最多 3 倍以上的提升。
+在 Server 端性能指标上有 2 倍以上的提升, 缩减生产环境服务器核心数量大约 4000 个。TypeScript 类型覆盖 95% 以上, 极大减少了生产环境的 bug 数量与跨团队协作成本。
+
+<block class="experience-block">
+  <a href="https://perfsee.com/"><p><span class="experience-sub-title">Perfsee 项目</span></p></a>
+</block>
+
+- 项目立项到全公司推广
+- 团队搭建
+- 架构与产品设计
+
+==split==
+
+<block class="experience-block">
+  <p><span class="experience-sub-title">Turbopack & Next.js</span></p>
+</block>
+
+Turbopack 与 Next.js 项目的 Rust 相关基础建设，CI 自动化工具开发，Turbopack 核心业务逻辑: `turbopack-ecmascript` 与 `turbopack-fs` 等。

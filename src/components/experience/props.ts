@@ -39,6 +39,20 @@ const props: {
         content: cnContents[3],
         url: 'https://leetcode-cn.com',
       },
+      {
+        name: 'ByteDance Web infra',
+        time: '2020.2 ~ 2022.1',
+        title: '高级工程师',
+        content: cnContents[4],
+        url: 'https://perfsee.com',
+      },
+      {
+        name: 'Vercel',
+        time: '2022.1 ~ 2022.3',
+        title: 'Software Engineer',
+        content: cnContents[5],
+        url: 'https://vercel.com',
+      },
     ],
   },
   get en() {

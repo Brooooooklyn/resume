@@ -25,13 +25,13 @@ export interface ExperienceProps {
   }[]
 }
 
-export const Experience: FC<ExperienceProps> = memo((props) => {
-  const bodys = props.companies.reverse().map((data, i) => {
+export const Experience: FC<ExperienceProps> = memo(({ companies, title }) => {
+  const bodys = [...companies].reverse().map((data) => {
     const inner = {
       __html: data.content || '',
     }
     return (
-      <div key={i}>
+      <div key={data.name}>
         <Global styles={experienceGlobalStyle} />
         <CompanyWrapper>
           <a href={data.url} target="_blank">
@@ -50,7 +50,7 @@ export const Experience: FC<ExperienceProps> = memo((props) => {
     <ExperienceWrapper>
       <Title>
         <TieSvg width="16" height="16" />
-        <TitleContent>{props.title}</TitleContent>
+        <TitleContent>{title}</TitleContent>
       </Title>
       <hr />
       <Body>{bodys}</Body>
