@@ -20,43 +20,43 @@
   "license": "MIT",
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
-    "@types/node": "^20.2.0",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "emotion-ts-plugin": "^2.0.1",
+    "@types/node": "^20.4.9",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "emotion-ts-plugin": "^3.0.1",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
     "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.5.1",
+    "html-webpack-plugin": "^5.5.3",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.2.3",
     "markdown-loader": "^8.0.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.1",
     "raw-loader": "^4.0.2",
     "readdir-enhanced": "^6.0.4",
     "svgo": "^3.0.2",
     "svgo-loader": "^4.0.0",
-    "ts-loader": "^9.4.2",
-    "typescript": "^5.0.4",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
     "url-loader": "^4.1.1",
-    "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0",
-    "webpack-merge": "^5.8.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0",
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.1.0",
-    "@emotion/css": "^11.11.0",
-    "@emotion/react": "^11.11.0",
+    "@ant-design/icons": "^5.2.5",
+    "@emotion/css": "^11.11.2",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "emotion": "^11.0.0",
     "emotion-server": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tb-icons": "^0.2.148",
-    "tslib": "^2.5.1"
+    "tslib": "^2.6.1"
   },
   "prettier": {
     "printWidth": 80,
@@ -85,5 +85,5 @@
       "pre-commit": "lint-staged"
     }
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@3.6.1"
 }
