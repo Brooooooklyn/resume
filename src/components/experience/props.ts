@@ -48,7 +48,7 @@ const props: {
       },
       {
         name: 'Vercel',
-        time: '2022.1 ~ 2022.3',
+        time: '2022.1 ~ 2023.3',
         title: 'Software Engineer',
         content: cnContents[5],
         url: 'https://vercel.com',
